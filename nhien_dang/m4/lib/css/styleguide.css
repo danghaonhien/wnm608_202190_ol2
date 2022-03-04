@@ -91,7 +91,13 @@ footer {
   justify-content: center;
 }
 /* CARD */
+p.hovertext {
+  display: none;
+}
 
+p.hovertext:hover {
+  display: inline;
+}
 .card {
   background-color: var(--color-white);
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
@@ -99,14 +105,26 @@ footer {
   padding: 2em;
   overflow: hidden;
   position: relative;
+  transition: transform 0.3s; /* Animation */
 }
-.card.soft {
-  border-radius: 0.5em;
+.card:hover {
+  transform: scale(1.025);
+  opacity: 0.8;
   box-shadow: 5px 5px rgba(0, 98, 90, 0.4), 10px 10px rgba(0, 98, 90, 0.3),
     15px 15px rgba(0, 98, 90, 0.2), 20px 20px rgba(0, 98, 90, 0.1),
     25px 25px rgba(0, 98, 90, 0.05);
 }
-.card.hard {
+.cardImage {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 500px;
+  height: 500px;
+}
+.card.soft {
+  border-radius: 0.5em;
+}
+rd.hard {
   border-radius: 0.2em;
   border: 2px solid var(--color-neutral-medium);
 }
@@ -120,7 +138,12 @@ footer {
 .card.medium {
   padding: 0;
 }
-
+@media (max-width: 768px) {
+  .cardImage {
+    width: 300px;
+    height: 250px;
+  }
+}
 /* VIEWWINDOW */
 
 .view-window {
@@ -130,6 +153,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  z-index: -100px;
 }
 
 /* COMPONENT CLASSES */
@@ -307,3 +331,30 @@ nav {
   background: url(../../img/sunset.jpg);
   height: 100vh;
 } */
+
+/* TOP TRENDING */
+.topTrendingContainer {
+  position: relative;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topTrending-content {
+  position: relative;
+  /* font-family: "Monserrat", sans-serif; */
+  color: white;
+  text-align: center;
+  margin: 0.625rem;
+  background-color: #333333;
+}
+.topTrending-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.topTrending-subtitle {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
