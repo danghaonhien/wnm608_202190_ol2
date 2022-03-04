@@ -90,6 +90,47 @@ footer {
 .flex-justify-center {
   justify-content: center;
 }
+/* CARD */
+
+.card {
+  background-color: var(--color-white);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  margin: 0 1em 1em 1em;
+  padding: 2em;
+  overflow: hidden;
+  position: relative;
+}
+.card.soft {
+  border-radius: 0.5em;
+  box-shadow: 5px 5px rgba(0, 98, 90, 0.4), 10px 10px rgba(0, 98, 90, 0.3),
+    15px 15px rgba(0, 98, 90, 0.2), 20px 20px rgba(0, 98, 90, 0.1),
+    25px 25px rgba(0, 98, 90, 0.05);
+}
+.card.hard {
+  border-radius: 0.2em;
+  border: 2px solid var(--color-neutral-medium);
+}
+.card.dark {
+  background-color: var(--color-neutral-dark);
+  color: var(--color-neutral-medium);
+}
+.card.medium {
+  background-color: var(--color-neutral-medium);
+}
+.card.medium {
+  padding: 0;
+}
+
+/* VIEWWINDOW */
+
+.view-window {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 /* COMPONENT CLASSES */
 
@@ -190,46 +231,6 @@ nav {
   .nav-links input {
     order: 3;
   }
-}
-
-/* CARD */
-
-.card {
-  background-color: var(--color-white);
-  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
-  margin-bottom: 1em;
-  padding: 1em;
-  overflow: hidden;
-  position: relative;
-}
-.card.soft {
-  border-radius: 0.5em;
-  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
-}
-.card.hard {
-  border-radius: 0.2em;
-  border: 2px solid var(--color-neutral-medium);
-}
-.card.dark {
-  background-color: var(--color-neutral-dark);
-  color: var(--color-neutral-medium);
-}
-.card.medium {
-  background-color: var(--color-neutral-medium);
-}
-.card.medium {
-  padding: 0;
-}
-
-/* VIEWWINDOW */
-
-.view-window {
-  height: 50vh;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 /* HERO IMAGE */

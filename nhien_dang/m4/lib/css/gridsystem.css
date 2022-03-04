@@ -3,12 +3,11 @@
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  padding: 20px 0;
+  padding: 50px 0;
   background-color: blue;
 }
 
 .col-1 {
-  grid-column: span 1;
   background-color: aqua;
   height: 500px;
   padding: 20px 0;
@@ -23,30 +22,8 @@
   height: 500px;
   padding: 20px 0;
 }
-
 @media (max-width: 768px) {
-  .grid li {
-    float: left;
-    width: 33.3333333%;
-  }
-  .grid li.title {
-    width: 100%;
-  }
-  .grid li.wide {
-    width: 66.666666%;
-  }
-}
-@media all and (min-width: 60em) {
-  .grid li {
-    width: 25%;
-  }
-  .grid li.title {
-    width: 25%;
-  }
-  .grid li.title > div {
-    padding: 7em 2em;
-  }
-  .grid li.wide {
-    width: 50%;
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
