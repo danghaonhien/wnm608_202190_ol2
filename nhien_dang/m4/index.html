@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="lib/css/styleguide.css" />
     <link rel="stylesheet" href="css/storetheme.css" />
+    <link rel="stylesheet" href="lib/css/gridsystem.css" />
     <title>My Page</title>
   </head>
 
@@ -52,7 +53,7 @@
     </nav>
     <section class="hero">
       <div class="hero-content">
-        <h1 class="hero-title">Discover San Francisco</h1>
+        <h1 class="hero-title">BAUHAUS NFT</h1>
 
         <h2 class="hero-subtitle">
           We offer the most unique adventures to explore the city!
@@ -69,6 +70,21 @@
       </div>
     </section>
 
+    <div class="grid">
+      <div class="col-1">1</div>
+      <div class="col-2">2</div>
+      <div class="col-3">3</div>
+    </div>
+    <div
+      class="view-window"
+      style="background-image: url('img/sunset.jpg')"
+    ></div>
+    <div class="grid">
+      <div class="col-1">1</div>
+      <div class="col-2">2</div>
+      <div class="col-3">3</div>
+    </div>
+    <div
     <script>
       const navIcon = document.querySelector(".nav-icon");
       const nav = document.querySelector("nav");
@@ -77,5 +93,18 @@
         nav.classList.toggle("show");
       };
     </script>
+    <footer>
+      <div class="static">
+        &copy;
+        <span id="copyright">
+          <script>
+            document
+              .getElementById("copyright")
+              .appendChild(document.createTextNode(new Date().getFullYear()));
+          </script>
+        </span>
+        Nhien Dang
+      </div>
+    </footer>
   </body>
 </html>

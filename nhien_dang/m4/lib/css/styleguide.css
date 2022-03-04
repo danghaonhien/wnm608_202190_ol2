@@ -11,7 +11,6 @@
   --color-neutral-dark: #555;
   --color-black: #000;
   --color-white: #fff;
-
   --header-height: 3rem;
   --spacing: 1rem;
   --font-serif: Georgia, "Times New Roman", Times, serif;
@@ -40,7 +39,21 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
+footer {
+  height: 3rem;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-color: #333333;
+  justify-content: center;
+  align-items: center;
+}
+.static {
+  position: static;
+  bottom: 0;
+  color: var(--color-white);
+  width: 100%;
+}
 /* LAYOUT CLASSES */
 
 .container {
@@ -80,60 +93,11 @@ a:hover {
 
 /* COMPONENT CLASSES */
 
-/* .nav ul {
-  list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-} */
-/* .navbar {
-  line-height: var(--header-height);
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background: rgb(0, 0, 0, 0.2);
-  color: var(--color-white);
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-}
-
-.navbar ul a {
-  padding: 10px;
-  color: var(--color-white);
-  text-decoration: none;
-  transition: 0.2s ease;
-}
-
-.navbar ul a:hover {
-  color: var(--color-black);
-}
-
-.navbar h1 {
-  font-size: 1em;
-  margin: 0;
-  font-family: var(--font-sans);
-} */
-
-/* .navbar a {
-  padding: 0 0.5em;
-  float: left;
-  display: block;
-  text-decoration: none;
-}
-.navbar a:hover {
-  background-color: var(--color-white);
-  color: black;
-} */
 nav {
-  background: rgb(0, 0, 0, 0.8);
+  margin: 0;
+  overflow: hidden;
+  background: #333333;
+  transition: 0.3s;
 }
 .nav-content {
   max-width: 1024px;
@@ -151,7 +115,9 @@ nav {
   color: var(--color-white);
 }
 .nav-content a:hover,
-.nav-icon:hover,
+.nav-icon:hover {
+  opacity: 0.7;
+}
 .nav-links {
   width: 80%;
   display: flex;
@@ -170,7 +136,7 @@ nav {
   transition: all 0.3s;
 }
 .bar {
-  height: 1px;
+  height: 2px;
   width: 18px;
   background: white;
   transition: 0.5s;
@@ -221,7 +187,7 @@ nav {
   .logo {
     order: 2;
   }
-  .search-icon {
+  .nav-links input {
     order: 3;
   }
 }
@@ -284,7 +250,8 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../../img/sunset.jpg);
+  /* background: url(../../img/sunset.jpg); */
+  background-color: #903a2b;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
