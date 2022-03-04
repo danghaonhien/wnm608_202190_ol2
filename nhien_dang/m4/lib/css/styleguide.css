@@ -54,6 +54,11 @@ footer {
   color: var(--color-white);
   width: 100%;
 }
+.page-container {
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #333333;
+}
 /* LAYOUT CLASSES */
 
 .container {
@@ -91,35 +96,33 @@ footer {
   justify-content: center;
 }
 /* CARD */
-p.hovertext {
-  display: none;
-}
 
-p.hovertext:hover {
-  display: inline;
-}
 .card {
   background-color: var(--color-white);
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
-  margin: 0 1em 1em 1em;
+  margin-bottom: 15px;
   padding: 2em;
   overflow: hidden;
   position: relative;
   transition: transform 0.3s; /* Animation */
 }
+
 .card:hover {
-  transform: scale(1.025);
-  opacity: 0.8;
+  filter: brightness(95%);
   box-shadow: 5px 5px rgba(0, 98, 90, 0.4), 10px 10px rgba(0, 98, 90, 0.3),
     15px 15px rgba(0, 98, 90, 0.2), 20px 20px rgba(0, 98, 90, 0.1),
     25px 25px rgba(0, 98, 90, 0.05);
 }
 .cardImage {
+  transition: transform 0.3s; /* Animation */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  width: 500px;
+  width: 400px;
   height: 500px;
+}
+.cardImage:hover {
+  transform: scale(1.025);
 }
 .card.soft {
   border-radius: 0.5em;
@@ -138,12 +141,33 @@ rd.hard {
 .card.medium {
   padding: 0;
 }
+.buy-button {
+  background-color: #333333;
+  color: white;
+  float: right;
+  /* margin-top: 5rem; */
+  padding: 0.9375rem 1.875rem;
+  font-family: "Monserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .cardImage {
-    width: 300px;
-    height: 250px;
+    width: 450px;
+    height: 350px;
   }
 }
+
+/* ITEMGRID */
+
+.item-grid {
+  width: 100%;
+}
+
+/* TEXTCONTENT */
+
 /* VIEWWINDOW */
 
 .view-window {
@@ -284,13 +308,16 @@ nav {
 }
 .hero-content {
   position: relative;
-  /* font-family: "Monserrat", sans-serif; */
   color: white;
+  font-style: normal;
+  font-weight: 900;
   text-align: center;
   margin: 0.625rem;
 }
 .hero-title {
-  font-size: 3rem;
+  color: #d0b541;
+  font-size: 5rem;
+  font-family: joost, sans-serif;
   font-weight: 600;
   margin-bottom: 0;
 }
