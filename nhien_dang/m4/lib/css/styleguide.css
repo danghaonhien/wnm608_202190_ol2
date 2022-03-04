@@ -23,7 +23,9 @@ body {
   font-family: var(--font-sans);
 }
 
-h1,
+h1 {
+  font-family: joost, sans-serif;
+}
 h2,
 h3,
 h4,
@@ -48,6 +50,15 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.container2 {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 75px;
+}
 .static {
   position: static;
   bottom: 0;
@@ -61,11 +72,11 @@ footer {
 }
 /* LAYOUT CLASSES */
 
-.container {
+/* .container {
   max-width: 800px;
   margin-right: auto;
   margin-left: auto;
-}
+} */
 
 .display-flex {
   display: flex;
@@ -109,16 +120,16 @@ footer {
 
 .card:hover {
   filter: brightness(95%);
-  box-shadow: 5px 5px rgba(0, 98, 90, 0.4), 10px 10px rgba(0, 98, 90, 0.3),
-    15px 15px rgba(0, 98, 90, 0.2), 20px 20px rgba(0, 98, 90, 0.1),
-    25px 25px rgba(0, 98, 90, 0.05);
+  box-shadow: 1px 1px rgba(0, 98, 90, 0.4), 5px 5px rgba(0, 98, 90, 0.3),
+    10px 10px rgba(0, 98, 90, 0.2), 15px 15px rgba(0, 98, 90, 0.1),
+    20px 20px rgba(0, 98, 90, 0.05);
 }
 .cardImage {
   transition: transform 0.3s; /* Animation */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  width: 400px;
+  width: 450px;
   height: 500px;
 }
 .cardImage:hover {
@@ -155,7 +166,7 @@ rd.hard {
 
 @media (max-width: 768px) {
   .cardImage {
-    width: 450px;
+    width: 300px;
     height: 350px;
   }
 }
@@ -276,9 +287,6 @@ nav {
   .logo {
     order: 2;
   }
-  .nav-links input {
-    order: 3;
-  }
 }
 
 /* HERO IMAGE */
@@ -372,7 +380,7 @@ nav {
   /* font-family: "Monserrat", sans-serif; */
   color: white;
   text-align: center;
-  margin: 0.625rem;
+
   background-color: #333333;
 }
 .topTrending-title {
@@ -384,4 +392,5 @@ nav {
   font-size: 2rem;
   font-weight: 200;
   margin-top: 1rem;
+  margin-bottom: 5rem;
 }

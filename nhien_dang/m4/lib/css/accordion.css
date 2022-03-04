@@ -1,0 +1,90 @@
+.accordion {
+  width: 25%;
+  margin-left: 50px;
+}
+@media (max-width: 768px) {
+  .accordion {
+    margin: 0;
+    margin-top: 25px;
+  }
+}
+.accordion dt {
+  color: #a7a5a3;
+  font-weight: bolder;
+}
+
+.accordion dt {
+  padding: 0.75em;
+  background-color: rgba(137, 129, 137, 0.2);
+  border-radius: 2px;
+  margin-bottom: 1em;
+}
+
+/* .accordion dt:hover {
+  color: white;
+  background-color: hsl(30, 2%, 15%);
+  cursor: pointer;
+} */
+
+.accordion dt::after {
+  content: " ";
+}
+
+.accordion dd {
+  font-size: 1em;
+  margin-left: 0;
+  padding: 0em 0.5em 1.25em 0.5em;
+  display: none;
+}
+
+.accordion dl,
+dt,
+dd {
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.accordion dt:hover,
+.accordion dt:active {
+  transition: all 2s;
+  transform: translateX(1rem);
+  cursor: pointer;
+  color: white;
+  background-image: linear-gradient(
+    transparent 100%,
+    transparent 25%,
+    #fff 50%
+  );
+
+  /* background-color: hsl(30, 2%, 15%); */
+}
+
+/*media query*/
+
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .accordion {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accordion {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .accordion {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .accordion {
+    width: 80%;
+  }
+}
