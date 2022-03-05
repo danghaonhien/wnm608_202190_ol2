@@ -9,13 +9,13 @@
   }
 }
 .accordion dt {
-  color: #a7a5a3;
+  color: rgba(215, 180, 24, 0.5);
   font-weight: bolder;
 }
 
 .accordion dt {
   padding: 0.75em;
-  background-color: rgba(137, 129, 137, 0.2);
+  background-color: rgba(157, 39, 25, 0.7);
   border-radius: 2px;
   margin-bottom: 1em;
 }
@@ -50,7 +50,10 @@ dd {
   transition: all 2s;
   transform: translateX(1rem);
   cursor: pointer;
-  color: white;
+  box-shadow: 1px 1px rgba(0, 98, 90, 0.4), 5px 5px rgba(0, 98, 90, 0.3),
+    10px 10px rgba(0, 98, 90, 0.2), 15px 15px rgba(0, 98, 90, 0.1),
+    20px 20px rgba(0, 98, 90, 0.05);
+  color: var(--color-bauhaus-yellow);
   background-image: linear-gradient(
     transparent 100%,
     transparent 25%,

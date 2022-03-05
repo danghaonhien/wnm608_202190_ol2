@@ -9,6 +9,11 @@
   --color-neutral-light: #eee;
   --color-neutral-medium: #999;
   --color-neutral-dark: #555;
+  --color-bauhaus-red: #903a2b;
+  --color-bauhaus-yellow: #d0b541;
+  --color-bauhaus-dark: #222222;
+  --color-bauhaus-light: #ededed;
+  --color-bauhaus-blue: #154084;
   --color-black: #000;
   --color-white: #fff;
   --header-height: 3rem;
@@ -46,11 +51,12 @@ footer {
   font-size: 12px;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  background-color: #333333;
+  background-color: var(--color-bauhaus-dark);
   justify-content: center;
   align-items: center;
 }
 .container2 {
+  
   display: flex;
   justify-content: center;
   text-align: left;
@@ -68,7 +74,7 @@ footer {
 .page-container {
   padding-right: 10px;
   padding-left: 10px;
-  background-color: #333333;
+  background-color: var(--color-bauhaus-dark);
 }
 /* LAYOUT CLASSES */
 
@@ -109,7 +115,7 @@ footer {
 /* CARD */
 
 .card {
-  background-color: var(--color-white);
+  background-color: var(--color-bauhaus-light);
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
   margin-bottom: 15px;
   padding: 2em;
@@ -153,8 +159,8 @@ rd.hard {
   padding: 0;
 }
 .buy-button {
-  background-color: #333333;
-  color: white;
+  background-color: var(--color-bauhaus-dark);
+  color: var(--color-bauhaus-light);
   float: right;
   /* margin-top: 5rem; */
   padding: 0.9375rem 1.875rem;
@@ -162,8 +168,11 @@ rd.hard {
   font-size: 1.125rem;
   font-weight: 200;
   cursor: pointer;
+  border: none;
 }
-
+.buy-button:hover {
+  color: var(--color-bauhaus-yellow);
+}
 @media (max-width: 768px) {
   .cardImage {
     width: 300px;
@@ -196,7 +205,7 @@ rd.hard {
 nav {
   margin: 0;
   overflow: hidden;
-  background: #333333;
+  background: var(--color-bauhaus-dark);
   transition: 0.3s;
 }
 .nav-content {
@@ -212,7 +221,7 @@ nav {
   line-height: 44px;
   text-decoration: none;
   transition: all 0.3s;
-  color: var(--color-white);
+  color:var(--color-bauhaus-light));
 }
 .nav-content a:hover,
 .nav-icon:hover {
@@ -238,7 +247,7 @@ nav {
 .bar {
   height: 2px;
   width: 18px;
-  background: white;
+  background: var(--color-bauhaus-light);
   transition: 0.5s;
 }
 .show .one {
@@ -252,12 +261,12 @@ nav {
     background-color: #000000;
   }
   .nav-links {
-    position: fixed;
+    position: absolute;
     top: 44px;
     right: 0;
-    height: 0;
+    height: 100%;
     width: 100%;
-    background: #333333;
+    background-color: var(--color-bauhaus-dark);
     flex-direction: column;
     justify-content: flex-start;
     transition: height 2s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.3s;
@@ -308,7 +317,7 @@ nav {
   width: 100%;
   height: 100%;
   /* background: url(../../img/sunset.jpg); */
-  background-color: #903a2b;
+  background-color: var(--color-bauhaus-red);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -316,14 +325,14 @@ nav {
 }
 .hero-content {
   position: relative;
-  color: white;
+  color: var(--color-bauhaus-light);
   font-style: normal;
   font-weight: 900;
   text-align: center;
   margin: 0.625rem;
 }
 .hero-title {
-  color: #d0b541;
+  color: var(--color-bauhaus-yellow);
   font-size: 5rem;
   font-family: joost, sans-serif;
   font-weight: 600;
@@ -335,20 +344,20 @@ nav {
   margin-top: 1rem;
 }
 .hero-button {
-  background-color: #ae2d59;
-  color: white;
-  border: 1px solid #cb376a;
+  background-color: var(--color-bauhaus-red);
+  color: var(--color-bauhaus-light);
+  border: 1px solid var(--color-bauhaus-red);
   /* margin-top: 5rem; */
   padding: 0.9375rem 1.875rem;
-  font-family: "Monserrat", sans-serif;
+  font-family: joost, sans-serif;
   font-size: 1.125rem;
   font-weight: 200;
   cursor: pointer;
   margin-left: 0.5rem;
 }
 .hero-button:hover {
-  background-color: #cb376a;
-  border: 1px solid #db7598;
+  background-color: var(--color-bauhaus-yellow);
+  border: 1px solid var(--color-bauhaus-yellow);
 }
 .hero-input {
   width: 100%;
@@ -356,32 +365,19 @@ nav {
   justify-content: center;
   margin-top: 5rem;
 }
-/* .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero {
-  background: url(../../img/sunset.jpg);
-  height: 100vh;
-} */
 
 /* TOP TRENDING */
 .topTrendingContainer {
   position: relative;
-  background-color: #333333;
+  background-color: var(--color-bauhaus-dark);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .topTrending-content {
   position: relative;
-  /* font-family: "Monserrat", sans-serif; */
-  color: white;
+  color: var(--color-bauhaus-light);
   text-align: center;
-
-  background-color: #333333;
 }
 .topTrending-title {
   font-size: 3rem;
