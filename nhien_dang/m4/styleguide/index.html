@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Guide</title>
+
+    <link rel="stylesheet" href="../lib/css/gridsystem.css" />
+    <link rel="stylesheet" href="../lib/css/styleguide.css" />
+    <link rel="stylesheet" href="../css/storetheme.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container display-flex">
+        <h1>Bauhaus NFTs</h1>
+      </div>
+    </header>
+
+    <div class="container" id="tableofcontents">
+      <h2>Table of Contents</h2>
+      <div class="card soft">
+        <ul>
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#paragraphs">Paragraphs</a></li>
+          <li><a href="#cards">Cards</a></li>
+          <li><a href="#navigation">Navigation</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container" id="typography">
+      <h2>Typography</h2>
+      <div class="card soft" id="headings">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </div>
+    </div>
+
+    <div class="container" id="paragraphs">
+      <h2>Parragraphs</h2>
+      <div class="card soft" id="Paragraphs">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          nisi quaerat corporis doloribus dolorem repellendus sunt error,
+          numquam officiis vitae asperiores delectus magni aperiam reiciendis
+          soluta magnam! Exercitationem, voluptatibus doloremque!
+        </p>
+      </div>
+    </div>
+
+    <div class="container" id="cards">
+      <h2>Cards</h2>
+      <div>
+        <div class="card soft">
+          1
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            dignissimos, impedit nemo nulla dolore porro non consectetur
+            voluptatum atque rem, nihil aspernatur adipisci ipsum ea ad sit
+            molestias alias recusandae.
+          </p>
+        </div>
+        <div class="card hard">
+          2
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            dignissimos, impedit nemo nulla dolore porro non consectetur
+            voluptatum atque rem, nihil aspernatur adipisci ipsum ea ad sit
+            molestias alias recusandae.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="mainTabs">
+      <h2>Navigation</h2>
+      <div class="nav-style card soft">
+        <a href="#home">Home </a>
+        <a href="#NFTs">NFTs </a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <script>
+      const makeNav = (classes = "") => {
+        const links = ["home", "store", "about"];
+        document.write(
+          <div>
+            <nav class='${classes}'>
+              <ul>
+                $
+                {links.reduce((r, o, i) => {
+                  return r + '<li><a href="#">${o}</a></li>';
+                }, "")}
+              </ul>
+            </nav>
+          </div>
+        );
+      };
+    </script>
+  </body>
+</html>
