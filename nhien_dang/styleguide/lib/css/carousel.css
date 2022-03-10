@@ -1,0 +1,132 @@
+.carousel {
+  width: 20vw;
+  height: 60vh;
+  min-height: 35em;
+  position: relative;
+  overflow: hidden;
+  transition: 3s;
+  border-radius: 0.5em;
+}
+.carousel:hover {
+  filter: brightness(95%);
+  box-shadow: 1px 1px rgba(0, 98, 90, 0.4), 5px 5px rgba(0, 98, 90, 0.3),
+    10px 10px rgba(0, 98, 90, 0.2), 15px 15px rgba(0, 98, 90, 0.1),
+    20px 20px rgba(0, 98, 90, 0.05);
+}
+@media (max-width: 768px) {
+  .carousel {
+    width: 350px;
+    height: 550px;
+  }
+}
+.carousel .slide,
+.carousel .slides {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .slides {
+  position: relative;
+}
+
+.carousel .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  opacity: 0;
+}
+
+.carousel .slide.moving {
+  transition: all 0.3s;
+}
+
+.carousel .slide.left,
+.carousel .slide.right,
+.carousel .slide.center {
+  opacity: 1;
+}
+.carousel .slide.center {
+  transform: translateX(0);
+}
+
+.carousel .slide.left {
+  transform: translateX(-100%);
+}
+
+.carousel .slide.right {
+  transform: translateX(100%);
+}
+
+.carousel .controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.carousel [class*="control-"] {
+  pointer-events: initial;
+}
+
+.carousel .control-left,
+.carousel .control-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1em;
+  font-size: 2em;
+  color: rgba(240, 241, 245, 0.5);
+}
+
+.carousel .control-left {
+  left: 0em;
+}
+
+.carousel .control-right {
+  right: 0em;
+}
+
+.carousel .control-pagination {
+  display: flex;
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(240, 241, 245, 0.5);
+}
+
+.carousel .control-dot {
+  padding: 1rem;
+  font-size: 2em;
+  line-height: 1rem;
+  transition: all 0.3s;
+  position: relative;
+  transform: scale(1, 1);
+}
+
+.carousel .control-dot.active {
+  transform: scale(1.5, 1.5);
+  color: white;
+}
+
+.carousel .control-dot,
+.carousel .control-left,
+.carousel .control-right {
+  cursor: pointer;
+}
+
+.control-left:hover {
+  color: white;
+}
+
+.control-right:hover {
+  color: white;
+}
