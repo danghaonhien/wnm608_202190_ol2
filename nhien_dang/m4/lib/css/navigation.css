@@ -149,7 +149,7 @@ nav {
   .nav-container a{
       display: block;
       padding: 0.2em 0.5em;
-    color: var(--color-bauhaus-dark);
+      color: var(--color-bauhaus-dark);
   }
   
   
@@ -160,7 +160,7 @@ nav {
   }
   
   .nav-container .active a{
-      background-color: var(--color-main-dark);
+      background-color: var(--color-bauhaus-dark);
       color: inherit;
   }
   
@@ -184,7 +184,16 @@ nav {
       padding: 0.5em 1em;
   
   }
-  
+  /* Change the color of links on mouse-over */
+.nav-pills a:hover {
+  background-color: var(--color-bauhaus-dark);
+  color: var(--color-bauhaus-light);
+}
+
+/* Add a color to the active/current link */
+.nav-pills a.active {
+  color: white;
+}
   .nav-crumbs a {
       display: inline-block;
   }
@@ -199,6 +208,37 @@ nav {
       content: '>';
   }
   
+  /* Style the list */
+.nav-crumbs ul {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+.nav-crumbs ul li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+.nav-crumbs ul li+li:before {
+  padding: 8px;
+  color: var(--color-bauhaus-dark);
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+.nav-crumbs ul li a {
+  color: var(--color-bauhaus-dark);
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+.nav-crumbs ul li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
   
   .nav-material a {
       padding: 0.5em 1em;

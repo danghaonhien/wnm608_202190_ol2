@@ -7,7 +7,8 @@
   padding: 2em;
   overflow: hidden;
   position: relative;
-  transition: transform 0.3ss; /* Animation */
+  transition: transform 0.3s; /* Animation */
+  border-radius: 0.5em;
 }
 
 .cardStyle {
@@ -71,8 +72,9 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  width: 450px;
+  width: 280px;
   height: 500px;
+  object-fit: cover;
 }
 .cardImage:hover {
   transform: scale(1.025);
@@ -87,7 +89,6 @@ footer {
 .buy-button {
   background-color: var(--color-bauhaus-dark);
   color: var(--color-bauhaus-light);
-  float: right;
   /* margin-top: 5rem; */
   padding: 0.9375rem 1.875rem;
   font-family: "Monserrat", sans-serif;
@@ -95,6 +96,7 @@ footer {
   font-weight: 200;
   cursor: pointer;
   border: none;
+  border-radius: 0.5em;
 }
 .buy-button:hover {
   color: var(--color-bauhaus-yellow);

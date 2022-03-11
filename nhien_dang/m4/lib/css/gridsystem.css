@@ -1,13 +1,5 @@
 .grid {
   display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(4, 1fr);
-  /* text-align: center; */
-  padding: 50px 0;
-  overflow: hidden;
-}
-.grid {
-  display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 

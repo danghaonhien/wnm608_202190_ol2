@@ -13,6 +13,7 @@
   --color-bauhaus-red: #903a2b;
   --color-bauhaus-yellow: #d0b541;
   --color-bauhaus-dark: #222222;
+  --color-bauhaus-medium: #888888;
   --color-bauhaus-light: #ededed;
   --color-bauhaus-blue: #154084;
   --color-black: #000;
@@ -100,14 +101,14 @@ footer {
 }
 
 .styleguidecontainer {
-  max-width: 1024px;
+  max-width: 75%;
   margin-right: auto;
   margin-left: auto;
   align-items: center;
 }
 
 .styletable {
-  max-width: 1024px;
+  max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -294,11 +295,11 @@ footer {
   border: 1px solid var(--color-bauhaus-red);
   /* margin-top: 5rem; */
   padding: 0.9375rem 1.875rem;
-  font-family: joost, sans-serif;
   font-size: 1.125rem;
   font-weight: 200;
   cursor: pointer;
   margin-left: 0.5rem;
+  border-radius: 0.5em;
 }
 .hero-button:hover {
   background-color: var(--color-bauhaus-yellow);
@@ -393,47 +394,46 @@ footer {
   height: 130px;
 }
 
-#mainclight {
-  background-color: var(--color-main-light);
+#bauhausRed {
+  background-color: var(--color-bauhaus-red);
 }
 
-#maincmedium {
-  background-color: var(--color-main-medium);
+#bauhausYellow {
+  background-color: var(--color-bauhaus-yellow);
 }
 
-#maincdark {
-  background-color: var(--color-main-dark);
+#bauhausBlue {
+  background-color: var(--color-bauhaus-blue);
+}
+#bauhausLight {
+  background-color: var(--color-bauhaus-light);
+}
+
+#bauhausMedium {
+  background-color: var(--color-bauhaus-medium);
+}
+
+#bauhausDark {
+  background-color: var(--color-bauhaus-dark);
 }
 
 .colorname {
   display: block;
   text-align: center;
   line-height: 20px;
-  background-color: white;
+  background-color: var(--color-bauhaus-light);
   margin-top: 10px;
 }
 
-#mainslight {
-  background-color: var(--color-sub-light);
-}
-
-#mainsmedium {
-  background-color: var(--color-sub-medium);
-}
-
-#mainsdark {
-  background-color: var(--color-sub-dark);
-}
-
-#mainnlight {
+#neutralLight {
   background-color: var(--color-neutral-light);
 }
 
-#mainnmedium {
+#neutralMedium {
   background-color: var(--color-neutral-medium);
 }
 
-#mainndark {
+#neutralDark {
   background-color: var(--color-neutral-dark);
 }
 
@@ -493,36 +493,4 @@ footer {
   background-color: var(--color-white);
   height: 30px;
   padding-top: 6px;
-}
-
-/* REVIEW */
-
-.review {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.post + .post {
-  margin-bottom: 5px;
-}
-
-/* CEO */
-
-.ceop {
-  flex-direction: row;
-  order: 2;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-}
-
-.ceointro {
-  margin-left: 10px;
-  margin-right: auto;
-  margin-top: 250px;
-  align-content: center;
-}
-
-.about.container {
-  margin-top: 30px;
-  justify-content: space-evenly;
 }
