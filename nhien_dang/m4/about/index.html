@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="../lib/css/gridsystem.css" />
     <link rel="stylesheet" href="../lib/css/carousel.css" />
     <link rel="stylesheet" href="../lib/css/accordion.css" />
-    <title>My Page</title>
+    <link rel="stylesheet" href="../lib/css/navigation.css" />
+    <link rel="stylesheet" href="../lib/css/cards.css" />
+    <title>Bauhaus NFTs</title>
   </head>
 
   <body>
@@ -43,64 +45,50 @@
         <div class="nav-links">
           <a href="../index.html">Home</a>
           <a href="../nfts/index.html">NFTs</a>
-          <a href="./index.html">About</a>
+          <a href="./about/index.html">About</a>
           <a href="../contact/index.html">Contact</a>
-
-          <!-- <!-- search icon -- > -->
-          <form class="searchBar">
-            <input type="text" name="search" placeholder="Search.." />
-          </form>
         </div>
       </div>
     </nav>
     <!-- Hero -->
-         <section class="hero">
+    <section class="hero">
       <div class="hero-content">
-        <h1 class="hero-title">About Page</h1>
+        <h1 class="hero-title">Contact Page</h1>
 
-        <h2 class="hero-subtitle">
-          Discover, collect, and invest Bauhaus NFTs
-        </h2>
        
       </div>
     </section>
-   
-      <!-- ViewWindow -->
-      <div
-        class="view-window"
-        style="background-image: url('../img/sunset.jpg')"
-      >
-    </div>
-     
-        <footer>
-      <div class="static">
-        &copy;
-        <span id="copyright">
-          <script>
-            document
-              .getElementById("copyright")
-              .appendChild(document.createTextNode(new Date().getFullYear()));
-          </script>
-        </span>
-        Nhien Dang
-      </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/scripts.js"></script>
-    <script>
-      new Carousel({
-        element: $(".carousel").eq(0),
-        timing: 6000,
-      });
-    </script>
-    <!--  -->
-    <script>
-      const navIcon = document.querySelector(".nav-icon");
-      const nav = document.querySelector("nav");
 
-      navIcon.onclick = function () {
-        nav.classList.toggle("show");
-      };
-    </script>
+ <!-- Footer -->
+ <footer>
+  <div class="static">
+    &copy;
+    <span id="copyright">
+      <script>
+        document
+          .getElementById("copyright")
+          .appendChild(document.createTextNode(new Date().getFullYear()));
+      </script>
+    </span>
+    Nhien Dang
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="./js/scripts.js"></script>
+<script>
+  new Carousel({
+    element: $(".carousel").eq(0),
+    timing: 6000,
+  });
+</script>
+<!--  -->
+<script>
+  const navIcon = document.querySelector(".nav-icon");
+  const nav = document.querySelector("nav");
+
+  navIcon.onclick = function () {
+    nav.classList.toggle("show");
+  };
+</script>
   </body>
 </html>

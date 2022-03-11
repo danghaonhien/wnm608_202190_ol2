@@ -9,9 +9,11 @@
     <link rel="stylesheet" type="text/css" href="../lib/css/navigation.css" />
     <link rel="stylesheet" type="text/css" href="../lib/css/cards.css" />
     <link rel="stylesheet" type="text/css" href="../css/storetheme.css" />
-    <link rel="stylesheet" href="../lib/css/carousel.css" />
-    <link rel="stylesheet" href="../lib/css/accordion.css" />
+    <link rel="stylesheet"type="text/css" href="../lib/css/carousel.css" />
+    <link rel="stylesheet"type="text/css" href="../lib/css/accordion.css" />
+    <link rel="stylesheet" type="text/css"href="../lib/css/form.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <nav>
@@ -23,15 +25,10 @@
         </div>
         <!-- naviagtion links -->
         <div class="nav-links">
-          <a href="./index.html">Home</a>
-          <a href="nfts/index.html">NFTs</a>
-          <a href="about/index.html">About</a>
-          <a href="contact/index.html">Contact</a>
-          <br />
-          <!-- <!-- search icon -- > -->
-          <!-- <form class="searchBar">
-          <input type="text" name="search" placeholder="Search.." />
-        </form> -->
+          <a href="../index.html">Home</a>
+          <a href="../nfts/index.html">NFTs</a>
+          <a href="../about/index.html">About</a>
+          <a href="../contact/index.html">Contact</a>
         </div>
       </div>
     </nav>
@@ -302,7 +299,7 @@
               </div>
 
               <dive class="article-body">
-                <img class="cardImage" src="../img/sunset.jpg" alt="" />
+                <img class="cardImageStyle" src="../img/sunset.jpg" alt="" />
               </dive>
               <div class="item-grid display-flex flex-align-center">
                 <div class="flex-stretch">
@@ -329,7 +326,7 @@
               </div>
 
               <dive class="article-body">
-                <img class="cardImage" src="../img/sunset.jpg" alt="" />
+                <img class="cardImageStyle" src="../img/sunset.jpg" alt="" />
               </dive>
               <div class="item-grid display-flex flex-align-center">
                 <div class="flex-stretch">
@@ -357,7 +354,7 @@
               </div>
 
               <dive class="article-body">
-                <img class="cardImage" src="../img/sunset.jpg" alt="" />
+                <img class="cardImageStyle" src="../img/sunset.jpg" alt="" />
               </dive>
               <div class="item-grid display-flex flex-align-center">
                 <div class="flex-stretch">
@@ -384,7 +381,7 @@
               </div>
 
               <dive class="article-body">
-                <img class="cardImage" src="../img/sunset.jpg" alt="" />
+                <img class="cardImageStyle" src="../img/sunset.jpg" alt="" />
               </dive>
               <div class="item-grid display-flex flex-align-center">
                 <div class="flex-stretch">
@@ -472,43 +469,281 @@
     <div class="styleguidecontainer" id="buttons">
       <h2>Buttons</h2>
       <div class="grid gap">
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-3">
           <div>
             <button type="button" class="buy-button">Buy Button</button>
           </div>
         </div>
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-3">
           <div>
             <button type="button" class="hero-button">Hero Button</button>
           </div>
         </div>
+        <div class="col-xs-12 col-md-3">
+          <div>
+            <button type="button" disabled class="disabledButton">Click Me!</button>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <div>
+            <button class="btn">Cart  <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
       </div>
+     
+      </div>
+   
     </div>
     <br />
+
+    <!-- Table -->
+    <script>
+      const makeTable =(classes='') =>{
+        const head = ['ID','office','Name','Email','Phone'];
+        const body = [
+        ['600','jack','jack.m@gmail.com]','76876467'],
+        ['601','jack','jack.m@gmail.com]','76876467'],
+        ['602','jack','jack.m@gmail.com]','76876467'],
+        ] ;
+        //let ran = Match.floor(Match.random()*links.Length);
+        document.write(`
+          <table class ="${classes}">
+          <thead> <tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+            <tbody> ${body.reduce((r,o,i)=>r+
+              `<tr>${
+                [i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+              }</tr>`,'')
+          }</tbody>
+          </table>
+          `)  };
+      
+      </script>
+      <div class="styleguidecontainer">
+      <h2>Tables</h2>
+      <div>
+          <div class="card soft">
+              <h3>Basic Table</h3>
+      
+      <script>makeTable("table")</script>
+      
+         </div>
+      
+         <div class="card soft">
+              <h3>Striped Table</h3>
+      
+      <script>makeTable("table striped")</script>
+      
+         </div>
+      
+         <div class="card soft">
+              <h3>Striped lined Vertical </h3>
+      
+      <script>makeTable("table lined vertical")</script>
+      
+         </div>
+      
+        <div class="card soft">
+              <h3>Striped lined Horizontal </h3>
+      
+      <script>makeTable("table lined horizontal")</script>
+      
+         </div>
+      
+           <div class="card soft">
+              <h3>Striped lined Border </h3>
+      
+      <script>makeTable("table lined border")</script>
+      
+         </div>
+            <div class="card soft">
+              <h3>Striped lined all </h3>
+      
+      <script>makeTable("table lined all")</script>
+      
+         </div>
+      
+            <div class="card soft">
+              <h3>Combination </h3>
+      
+    <script>makeTable("table lined vertical border striped")</script>
+      
+         </div>
+        </div>
+        </div>
+        <br>
     <!-- Forms -->
-    <div class="styleguidecontainer" id="forms">
-      <h2>Forms</h2>
-      <h3>Inputs</h3>
+    <div class="styleguidecontainer">
+    <h2>Forms</h2>
+   
 
       <div class="card">
+        <h3>Inputs</h3>
         <h3>Default Inputs</h3>
         <form>
+          <label for="text">Text</label>
           <input type="text" name="" /><br />
-          <input type="number" name="" /><br />
+          <label for="number">Number</label>
+          <input type="number" name="number"  /><br />
+          <label for="password">Password</label>
           <input type="password" name="" /><br />
+          <label for="url">Url</label>
           <input type="url" name="" /><br />
+          <label for="email">Email</label>
           <input type="email" name="" /><br />
+          <label for="datetime-local">Date & Time</label>
           <input type="datetime-local" name="" /><br />
+          <label for="date">Date</label>
           <input type="date" name="" /><br />
+          <label for="search">Search <i class="fa fa-search"></i> </label>
           <input type="search" name="" /><br />
         </form>
       </div>
     </div>
+ <br>
+<!-- Contact Form -->
+<div class="styleguidecontainer">
+<h2>Contact Form</h2>
+      <div class="inputContainer card soft">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="lname">Email</label>
+          <input type="text" id="email" name="Email" placeholder="johnDoe@johnDoe.com">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="vietnam">Vietnam</option>
+            <option value="taiwan">Taiwan</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+      </div>
+<br>
+      <!-- Hot Dog -->
+      <div class="styleguidecontainer">
+        <h2>Hot Dog</h2>
+        <div class="card sof">
+<div class="form-control">
+  <form action="">
+    <input type="search" class="hotdog" placeholder="Search">
+  </form>
+</div>
+<div class="form-control">
+  <form class="card soft dark">
+    <input type="search" class="hotdog" placeholder="Search">
+  </form>
+</div>
+<div class="form-control">
+  <form action="" class="hotdog">
+   <span>&equiv;</span> <input type="search"  placeholder="Search">
+  </form>
+</div>
+
+
+        </div>
+      </div>
     <br />
-    <!-- FOOTER -->
+    <!-- Utilities -->
     <div class="styleguidecontainer">
-      <h2>Footer</h2>
+      <h2>Utilities</h2>
+    <div class="grid gap">
+      <div class="col-xs-12 col-md-3">
+      <!-- Select -->
+
+  <h3>Select</h3>
+  <div class="custom-select" style="width:200px;">
+    <select>
+      <option value="0">Select NFTs:</option>
+      <option value="1">NFT#1</option>
+      <option value="2">NFT#2</option>
+      <option value="3">NFT#3</option>
+      <option value="4">NFT#4</option>
+      <option value="5">NFT#5</option>
+      <option value="6">NFT#6</option>
+      <option value="7">NFT#7</option>
+      <option value="8">NFT#8</option>
+      <option value="9">NFT#9</option>
+      <option value="10">NFT#10</option>
+      <option value="11">NFT#11</option>
+      <option value="12">NFT#12</option>
+    </select>
+  </div>
+  </div>
+ 
+      
+      <div class="col-xs-12 col-md-3">
+        <div>
+       <!-- Check Box -->
+
+  <h3>Check Box</h3>
+  <label class="checkboxContainer">NFT#1
+    <input type="checkbox" checked="checked">
+    <span class="checkmark"></span>
+  </label>
+  
+  <label class="checkboxContainer">NFT#2
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  
+  <label class="checkboxContainer">NFT#3
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  
+  <label class="checkboxContainer">NFT#4
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  </div>
+       
+      </div>
+          <!-- Alert Box -->
+      <div class="col-xs-12 col-md-3">
+        <div>
+         
+            <h3>Alert Box</h3>
+            <p>Click the button to display an alert box.</p>
+            <button onclick="myFunction()" class="buy-button">Try it</button>
+         
+        </div>
+      </div>
+      <!-- Favourite -->
+      
+      <div class="col-xs-12 col-md-3">
+        <h3>Favourite</h3>
+          <div class="favourite">
+           <input type="checkbox" id="heart-example" class="hidden">
+          <label for="heart-example">&hearts;</label>          
+        </div>
+      </div>
     </div>
+  </div>
+<br>
+
+   
+
+<script>
+function myFunction() {
+  alert("You just did something really wrong");
+}
+</script>
+<br>
+    <!-- FOOTER -->
+          <div class="styleguidecontainer">
+      <h2>Footer</h2>
+   </div>
     <footer>
       <div class="static">
         &copy;
@@ -538,5 +773,6 @@
         nav.classList.toggle("show");
       };
     </script>
+ 
   </body>
 </html>
