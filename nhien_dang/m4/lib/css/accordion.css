@@ -72,11 +72,17 @@ dd {
   .accordion {
     width: 80%;
   }
+  video {
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .accordion {
     width: 80%;
+  }
+  video {
+    width: 100%;
   }
 }
 
@@ -84,10 +90,16 @@ dd {
   .accordion {
     width: 80%;
   }
+  video {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 600px) {
   .accordion {
     width: 80%;
+  }
+  video {
+    width: 100%;
   }
 }
