@@ -9,7 +9,7 @@
   }
 }
 .accordion dt {
-  color: rgba(215, 180, 24, 0.5);
+  color: rgba(215, 180, 24, 0.8);
   font-weight: bolder;
 }
 
@@ -53,7 +53,7 @@ dd {
   box-shadow: 1px 1px rgba(0, 98, 90, 0.4), 5px 5px rgba(0, 98, 90, 0.3),
     10px 10px rgba(0, 98, 90, 0.2), 15px 15px rgba(0, 98, 90, 0.1),
     20px 20px rgba(0, 98, 90, 0.05);
-  color: var(--color-bauhaus-yellow);
+  color: var(--color-bauhaus-light);
   background-image: linear-gradient(
     transparent 100%,
     transparent 25%,

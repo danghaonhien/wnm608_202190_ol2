@@ -37,32 +37,40 @@
       <h2>Table of Contents</h2>
       <div class="nav-container card soft">
         <ul>
-          <li><a href="#typography">Typography</a></li>
+          <li><a href="#Typography">Typography</a></li>
           <li><a href="#Headings">Headings</a></li>
           <li><a href="#Paragraphs">Paragraphs</a></li>
-          <li><a href="#grid">Grid system</a></li>
-          <li><a href="#cards">Cards</a></li>
-          <li><a href="#viewwindow">View Window</a></li>
-          <li><a href="#navigation">Navigation</a></li>
-          <li><a href="#color">Colors</a></li>
-          <li><a href="#forms">Forms</a></li>
-          <li><a href="#inputs">Inputs</a></li>
+          <li><a href="#Grid">Grid system</a></li>
+          <li><a href="#Cards">Cards</a></li>
+          <li><a href="#Navigations">Navigations</a></li>
+          <li><a href="#Carousel">Carousel & Accordion</a></li>
+          <li><a href="#Navigations">Navigations</a></li>
+          <li><a href="#Viewwindow">View Window</a></li>
+          <li><a href="#ProductCard">Product Cards</a></li>
+          <li><a href="#Color">Color Palette</a></li>
+          <li><a href="#Buttons">Buttons</a></li>
+          <li><a href="#Tables">Tables</a></li>
+          <li><a href="#Forms">Forms</a></li>
+          <li><a href="#ContactForm">Contact Form</a></li> 
+          <li><a href="#HotDog">Hot Dog</a></li> 
+          <li><a href="#Utilities">Utilities</a></li>
+          <li><a href="#Footer">Footer</a></li>
         </ul>
       </div>
     </div>
     <br />
-    <div class="styleguidecontainer" id="typography">
-      <h2>Typography</h2>
-      <div class="card soft" id="headings">
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
+    <div class="styleguidecontainer" id="Typography">
+      <h2 id="Headings">Typography</h2>
+      <div class="card soft" >
+        <h1>Heading 1 - <span>Joost Bold</span></h1>
+        <h2>Heading 2 - <span>Futura Bold</span></h2>
+        <h3>Heading 3 - <span>Futura Medium</span></h3>
+        <h4>Heading 4 - <span>Futura Regular</span></h4>
+        <h5>Heading 5 - <span>Futura Regular</span></h5>
+        <h6>Heading 6 - <span>Futura Regular</span></h6>
       </div>
-      <div class="card soft" id="Paragraphs">
-        <h3>Paragraphs</h3>
+      <div class="card soft" >
+        <h3 id="Paragraphs">Paragraphs</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsum
           et possimus perspiciatis, minus hic soluta odio nostrum officia aut.
@@ -84,8 +92,8 @@
     </div>
     <br />
     <div class="styleguidecontainer">
-      <h2>Grids</h2>
-      <div class="gridbox card">
+      <h2 id="Grids">Grids</h2>
+      <div class="gridbox card" >
         <div class="grid1">1/1</div>
         <div class="grid2">1/2</div>
         <div class="grid3">1/2</div>
@@ -97,7 +105,7 @@
     <br />
     <div class="styleguidecontainer">
       <h2>Cards</h2>
-      <div class="grid gap">
+      <div class="grid gap" id="Cards">
         <div class="col-xs-12 col-md-4">
           <div class="card">Card</div>
         </div>
@@ -119,9 +127,9 @@
       </div>
     </div>
     <br />
-    <div class="styleguidecontainer">
-      <h2>Navigations</h2>
-      <div class="nav-container card soft">
+    <div class="styleguidecontainer" >
+      <h2 id="Navigations">Navigations</h2>
+      <div class="nav-container card soft" >
         <h3>Basic Navigation</h3>
         <ul>
           <li><a href="#">Link 1</a></li>
@@ -178,11 +186,26 @@
           </ul>
         </div>
       </div>
+      <br>
+      <div class="cardStyle card soft">
+      <h3>Rounded Active and Hover Buttons</h3>
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+</div>
+
       <br />
       <!-- CAROUSEL -->
-      <h2>Carousel & Accordion</h2>
+      <h2 id="Carousel">Carousel & Accordion</h2>
       <div class="container2">
-        <div class="carousel">
+        <div class="carousel" >
           <div class="slides">
             <div class="slide center">
               <img src="../img/sunset.jpg" class="forCarousel" />
@@ -276,15 +299,16 @@
       </div>
       <br />
       <!-- View Window -->
-      <h2>View Window</h2>
+      <h2 id="Viewwindow">View Window</h2>
 
       <div
         class="view-window"
         style="background-image: url('../img/sunset.jpg')"
+        
       ></div>
       <br />
       <!-- Figure -->
-      <h2>Product Card</h2>
+      <h2 id="ProductCard">Product Card</h2>
       <div class="grid-container">
         <div class="grid gap">
           <div class="col-xs-12 col-md-3">
@@ -403,7 +427,7 @@
     <!-- COLORS -->
 
     <div class="styleguidecontainer">
-      <h2>Color Palette</h2>
+      <h2 id="Color">Color Palette</h2>
 
       <div class="palette grid gap">
         <div class="col-xs-12 col-md-4">
@@ -467,7 +491,7 @@
     <br />
     <!-- Buttons -->
     <div class="styleguidecontainer" id="buttons">
-      <h2>Buttons</h2>
+      <h2 id="Buttons">Buttons</h2>
       <div class="grid gap">
         <div class="col-xs-12 col-md-3">
           <div>
@@ -519,7 +543,7 @@
       
       </script>
       <div class="styleguidecontainer">
-      <h2>Tables</h2>
+      <h2 id="Tables">Tables</h2>
       <div>
           <div class="card soft">
               <h3>Basic Table</h3>
@@ -573,7 +597,7 @@
         <br>
     <!-- Forms -->
     <div class="styleguidecontainer">
-    <h2>Forms</h2>
+    <h2 id="Forms">Forms</h2>
    
 
       <div class="card">
@@ -602,7 +626,7 @@
  <br>
 <!-- Contact Form -->
 <div class="styleguidecontainer">
-<h2>Contact Form</h2>
+<h2 id="ContactForm">Contact Form</h2>
       <div class="inputContainer card soft">
         <form action="action_page.php">
       
@@ -632,7 +656,7 @@
 <br>
       <!-- Hot Dog -->
       <div class="styleguidecontainer">
-        <h2>Hot Dog</h2>
+        <h2 id="HotDog">Hot Dog</h2>
         <div class="card sof">
 <div class="form-control">
   <form action="">
@@ -656,7 +680,7 @@
     <br />
     <!-- Utilities -->
     <div class="styleguidecontainer">
-      <h2>Utilities</h2>
+      <h2 id="Utilities">Utilities</h2>
     <div class="grid gap">
       <div class="col-xs-12 col-md-3">
       <!-- Select -->
@@ -730,19 +754,41 @@
       </div>
     </div>
   </div>
-<br>
-
-   
-
+  <script>
+    function myFunction() {
+      alert("You just did something really wrong");
+    }
+    </script>
+<!-- Scroll Top Button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <script>
-function myFunction() {
-  alert("You just did something really wrong");
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 </script>
+
+
+
 <br>
     <!-- FOOTER -->
           <div class="styleguidecontainer">
-      <h2>Footer</h2>
+      <h2 id="Footer">Footer</h2>
    </div>
     <footer>
       <div class="static">
