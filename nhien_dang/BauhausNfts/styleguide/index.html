@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Styleguide</title>
+    <link rel="stylesheet" type="text/css" href="../lib/css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/css/gridsystem.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/css/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/css/cards.css" />
+    <link rel="stylesheet" type="text/css" href="../css/storetheme.css" />
+    <link rel="stylesheet"type="text/css" href="../lib/css/carousel.css" />
+    <link rel="stylesheet"type="text/css" href="../lib/css/accordion.css" />
+    <link rel="stylesheet" type="text/css"href="../lib/css/form.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content">
+        <!-- navigation button -->
+        <div class="nav-icon">
+          <div class="bar one"></div>
+          <div class="bar two"></div>
+        </div>
+        <!-- naviagtion links -->
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="../nfts/index.html">NFTs</a>
+          <a href="../about/index.html">About</a>
+          <a href="../contact/index.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <div class="styleguidecontainer" id="tableofcontents">
+      <h2>Table of Contents</h2>
+      <div class="nav-container card soft">
+        <ul>
+          <li><a href="#Typography">Typography</a></li>
+          <li><a href="#Headings">Headings</a></li>
+          <li><a href="#Paragraphs">Paragraphs</a></li>
+          <li><a href="#Grid">Grid system</a></li>
+          <li><a href="#Cards">Cards</a></li>
+          <li><a href="#Navigations">Navigations</a></li>
+          <li><a href="#Carousel">Carousel & Accordion</a></li>
+          <li><a href="#Navigations">Navigations</a></li>
+          <li><a href="#Viewwindow">View Window</a></li>
+          <li><a href="#ProductCard">Product Cards</a></li>
+          <li><a href="#Color">Color Palette</a></li>
+          <li><a href="#Buttons">Buttons</a></li>
+          <li><a href="#Tables">Tables</a></li>
+          <li><a href="#Forms">Forms</a></li>
+          <li><a href="#ContactForm">Contact Form</a></li> 
+          <li><a href="#HotDog">Hot Dog</a></li> 
+          <li><a href="#Utilities">Utilities</a></li>
+          <li><a href="#Footer">Footer</a></li>
+        </ul>
+      </div>
+    </div>
+    <br />
+    <div class="styleguidecontainer" id="Typography">
+      <h2 id="Headings">Typography</h2>
+      <div class="card soft" >
+        <h1>Heading 1 - <span>Joost Bold</span></h1>
+        <h2>Heading 2 - <span>Futura Bold</span></h2>
+        <h3>Heading 3 - <span>Futura Medium</span></h3>
+        <h4>Heading 4 - <span>Futura Regular</span></h4>
+        <h5>Heading 5 - <span>Futura Regular</span></h5>
+        <h6>Heading 6 - <span>Futura Regular</span></h6>
+      </div>
+      <div class="card soft" >
+        <h3 id="Paragraphs">Paragraphs</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsum
+          et possimus perspiciatis, minus hic soluta odio nostrum officia aut.
+          Sequi vitae quidem veritatis veniam excepturi similique consectetur
+          dolores voluptatem.
+        </p>
+        <p>
+          Qui rem, aliquam natus est harum nisi dolores nihil ipsam cupiditate
+          quod sunt rerum voluptas? Placeat cumque dicta illum facilis aut
+          soluta excepturi atque, sit quas vitae fuga odit, facere.
+        </p>
+        <p>
+          Laboriosam, repellendus natus sit aut consequatur sunt! Fugit,
+          doloremque! Fugit incidunt, vero placeat, voluptates soluta magni
+          velit accusantium, itaque voluptatum nemo esse ullam, cum ratione
+          provident cumque quo ipsam sed.
+        </p>
+      </div>
+    </div>
+    <br />
+    <div class="styleguidecontainer">
+      <h2 id="Grids">Grids</h2>
+      <div class="gridbox card" >
+        <div class="grid1">1/1</div>
+        <div class="grid2">1/2</div>
+        <div class="grid3">1/2</div>
+        <div class="grid4">1/3</div>
+        <div class="grid5">1/3</div>
+        <div class="grid6">1/3</div>
+      </div>
+    </div>
+    <br />
+    <div class="styleguidecontainer">
+      <h2>Cards</h2>
+      <div class="grid gap" id="Cards">
+        <div class="col-xs-12 col-md-4">
+          <div class="card">Card</div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="card soft">Card Soft</div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="card hard">Card Hard</div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="card dark">Card Dark</div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="card medium">Card Medium</div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="card flat">Card Flat</div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="styleguidecontainer" >
+      <h2 id="Navigations">Navigations</h2>
+      <div class="nav-container card soft" >
+        <h3>Basic Navigation</h3>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </div>
+      <br />
+      <div class="cardStyle card soft">
+        <h3>Flex Navigation</h3>
+        <div class="nav-container nav-flex">
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <div class="cardStyle card soft">
+        <h3>Stretch Navigation</h3>
+        <div class="nav-container nav-stretch">
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <div class="cardStyle card soft">
+        <h3>Pills Navigation</h3>
+        <div class="nav-container nav-pills">
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <div class="cardStyle card soft">
+        <h3>Breadcrumbs Navigation</h3>
+        <div class="nav-container nav-crumbs">
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <div class="cardStyle card soft">
+      <h3>Rounded Active and Hover Buttons</h3>
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+</div>
+
+      <br />
+      <!-- CAROUSEL -->
+      <h2 id="Carousel">Carousel & Accordion</h2>
+      <div class="container2">
+        <div class="carousel" >
+          <div class="slides">
+            <div class="slide center">
+              <img src="../img/sunset.jpg" class="forCarousel" />
+            </div>
+            <div class="slide">
+              <img src="../img/sunset.jpg" class="forCarousel" />
+            </div>
+            <div class="slide">
+              <img src="../img/sunset.jpg" class="forCarousel" />
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="control-left">&lt;</div>
+            <div class="control-right">&gt;</div>
+            <div class="control-pagination">
+              <div class="control-dot active">
+                <svg width="18" height="36" display="block">
+                  <circle
+                    cx="9"
+                    cy="22"
+                    r="8"
+                    stroke="white"
+                    stroke-width="1.5"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="control-dot">
+                <svg width="18" height="44" display="block">
+                  <circle
+                    cx="9"
+                    cy="22"
+                    r="8"
+                    stroke="white"
+                    stroke-width="1.5"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="control-dot">
+                <svg width="18" height="44" display="block">
+                  <circle
+                    cx="9"
+                    cy="22"
+                    r="8"
+                    stroke="white"
+                    stroke-width="1.5"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <dl class="accordion">
+          <h3>Click to Read</h3>
+          <dt>I. Bauhaus #1</dt>
+          <dd>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English.
+            </p>
+          </dd>
+
+          <dt>II. Bauhaus #2</dt>
+          <dd>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English.
+            </p>
+          </dd>
+
+          <dt>III. Bauhaus #3</dt>
+          <dd>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English.
+            </p>
+          </dd>
+        </dl>
+      </div>
+      <br />
+      <!-- View Window -->
+      <h2 id="Viewwindow">View Window</h2>
+
+      <div
+        class="view-window"
+        style="background-image: url('../img/sunset.jpg')"
+        
+      ></div>
+      <br />
+      <!-- Figure -->
+      <h2 id="ProductCard">Product Card</h2>
+      <div class="grid-container">
+        <div class="grid gap">
+          <div class="col-xs-12 col-md-3">
+            <article id="" class="card soft">
+              <div class="display-flex flex-align-center">
+                <div class="flex-stretch">
+                  <h2>NFT</h2>
+                </div>
+                <div class="flex-none">
+                  <small>No.01</small>
+                </div>
+              </div>
+
+              <dive class="article-body">
+                <img class="cardImageStyle" src="../img/sunset.jpg" alt="" />
+              </dive>
+              <div class="item-grid display-flex flex-align-center">
+                <div class="flex-stretch">
+                  <h3>Price</h3>
+                  <small
+                    >0.08 <span><i class="fab fa-ethereum"></i></span
+                  ></small>
+                </div>
+                <div class="flex-none">
+                  <button type="button" class="buy-button">BUY NOW</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <article id="" class="card soft">
+              <div class="display-flex flex-align-center">
+                <div class="flex-stretch">
+                  <h2>NFT</h2>
+                </div>
+                <div class="flex-none">
+                  <small>No.02</small>
+                </div>
+              </div>
+
+              <dive class="article-body">
+                <img class="cardImageStyle" src="../img/sunset.jpg" alt="" />
+              </dive>
+              <div class="item-grid display-flex flex-align-center">
+                <div class="flex-stretch">
+                  <h3>Price</h3>
+                  <small
+                    >0.08 <span><i class="fab fa-ethereum"></i></span
+                  ></small>
+                </div>
+                <div class="flex-none">
+                  <button type="button" class="buy-button">BUY NOW</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <article id="" class="card soft">
+              <div class="display-flex flex-align-center">
+                <div class="flex-stretch">
+                  <h2>NFT</h2>
+                </div>
+                <div class="flex-none">
+                  <small>No.03</small>
+                </div>
+              </div>
+
+              <dive class="article-body">
+                <img class="cardImageStyle" src="../img/sunset.jpg" alt="" />
+              </dive>
+              <div class="item-grid display-flex flex-align-center">
+                <div class="flex-stretch">
+                  <h3>Price</h3>
+                  <small
+                    >0.08 <span><i class="fab fa-ethereum"></i></span
+                  ></small>
+                </div>
+                <div class="flex-none">
+                  <button type="button" class="buy-button">BUY NOW</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <article id="" class="card soft">
+              <div class="display-flex flex-align-center">
+                <div class="flex-stretch">
+                  <h2>NFT</h2>
+                </div>
+                <div class="flex-none">
+                  <small>No.04</small>
+                </div>
+              </div>
+
+              <dive class="article-body">
+                <img class="cardImageStyle" src="../img/sunset.jpg" alt="" />
+              </dive>
+              <div class="item-grid display-flex flex-align-center">
+                <div class="flex-stretch">
+                  <h3>Price</h3>
+                  <small
+                    >0.08 <span><i class="fab fa-ethereum"></i></span
+                  ></small>
+                </div>
+                <div class="flex-none">
+                  <button type="button" class="buy-button">BUY NOW</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- COLORS -->
+
+    <div class="styleguidecontainer">
+      <h2 id="Color">Color Palette</h2>
+
+      <div class="palette grid gap">
+        <div class="col-xs-12 col-md-4">
+          <div class="colorbox" id="bauhausRed">
+            <div class="colorname">Bauhaus Red (#903a2b)</div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <div class="colorbox" id="bauhausYellow">
+            <div class="colorname">Bauhaus Yellow (#d0b541)</div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <div class="colorbox" id="bauhausBlue">
+            <div class="colorname">Bauhaus Blue (#154084)</div>
+          </div>
+        </div>
+      </div>
+      <div class="palette grid gap">
+        <div class="col-xs-12 col-md-4">
+          <div class="colorbox" id="bauhausLight">
+            <div class="colorname">Bauhaus Light (#ededed)</div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <div class="colorbox" id="bauhausMedium">
+            <div class="colorname">Bauhaus Medium (#888888)</div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <div class="colorbox" id="bauhausDark">
+            <div class="colorname">Bauhaus Dark (#222222)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="palette grid gap">
+        <div class="col-xs-12 col-md-4">
+          <div class="colorbox" id="neutralLight">
+            <div class="colorname">Neutral Light (#b7b7b7ff)</div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <div class="colorbox" id="neutralMedium">
+            <div class="colorname">Neutral Medium (#666666ff)</div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <div class="colorbox" id="neutralDark">
+            <div class="colorname">Neutral Dark (#434343ff)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- Buttons -->
+    <div class="styleguidecontainer" id="buttons">
+      <h2 id="Buttons">Buttons</h2>
+      <div class="grid gap">
+        <div class="col-xs-12 col-md-3">
+          <div>
+            <button type="button" class="buy-button">Buy Button</button>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <div>
+            <button type="button" class="hero-button">Hero Button</button>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <div>
+            <button type="button" disabled class="disabledButton">Click Me!</button>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <div>
+            <button class="btn">Cart  <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+     
+      </div>
+   
+    </div>
+    <br />
+
+    <!-- Table -->
+    <script>
+      const makeTable =(classes='') =>{
+        const head = ['ID','office','Name','Email','Phone'];
+        const body = [
+        ['600','jack','jack.m@gmail.com]','76876467'],
+        ['601','jack','jack.m@gmail.com]','76876467'],
+        ['602','jack','jack.m@gmail.com]','76876467'],
+        ] ;
+        //let ran = Match.floor(Match.random()*links.Length);
+        document.write(`
+          <table class ="${classes}">
+          <thead> <tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+            <tbody> ${body.reduce((r,o,i)=>r+
+              `<tr>${
+                [i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+              }</tr>`,'')
+          }</tbody>
+          </table>
+          `)  };
+      
+      </script>
+      <div class="styleguidecontainer">
+      <h2 id="Tables">Tables</h2>
+      <div>
+          <div class="card soft">
+              <h3>Basic Table</h3>
+      
+      <script>makeTable("table")</script>
+      
+         </div>
+      
+         <div class="card soft">
+              <h3>Striped Table</h3>
+      
+      <script>makeTable("table striped")</script>
+      
+         </div>
+      
+         <div class="card soft">
+              <h3>Striped lined Vertical </h3>
+      
+      <script>makeTable("table lined vertical")</script>
+      
+         </div>
+      
+        <div class="card soft">
+              <h3>Striped lined Horizontal </h3>
+      
+      <script>makeTable("table lined horizontal")</script>
+      
+         </div>
+      
+           <div class="card soft">
+              <h3>Striped lined Border </h3>
+      
+      <script>makeTable("table lined border")</script>
+      
+         </div>
+            <div class="card soft">
+              <h3>Striped lined all </h3>
+      
+      <script>makeTable("table lined all")</script>
+      
+         </div>
+      
+            <div class="card soft">
+              <h3>Combination </h3>
+      
+    <script>makeTable("table lined vertical border striped")</script>
+      
+         </div>
+        </div>
+        </div>
+        <br>
+    <!-- Forms -->
+    <div class="styleguidecontainer">
+    <h2 id="Forms">Forms</h2>
+   
+
+      <div class="card">
+        <h3>Inputs</h3>
+        <h3>Default Inputs</h3>
+        <form>
+          <label for="text">Text</label>
+          <input type="text" name="" /><br />
+          <label for="number">Number</label>
+          <input type="number" name="number"  /><br />
+          <label for="password">Password</label>
+          <input type="password" name="" /><br />
+          <label for="url">Url</label>
+          <input type="url" name="" /><br />
+          <label for="email">Email</label>
+          <input type="email" name="" /><br />
+          <label for="datetime-local">Date & Time</label>
+          <input type="datetime-local" name="" /><br />
+          <label for="date">Date</label>
+          <input type="date" name="" /><br />
+          <label for="search">Search <i class="fa fa-search"></i> </label>
+          <input type="search" name="" /><br />
+        </form>
+      </div>
+    </div>
+ <br>
+<!-- Contact Form -->
+<div class="styleguidecontainer">
+<h2 id="ContactForm">Contact Form</h2>
+      <div class="inputContainer card soft">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="lname">Email</label>
+          <input type="text" id="email" name="Email" placeholder="johnDoe@johnDoe.com">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="vietnam">Vietnam</option>
+            <option value="taiwan">Taiwan</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+      </div>
+<br>
+      <!-- Hot Dog -->
+      <div class="styleguidecontainer">
+        <h2 id="HotDog">Hot Dog</h2>
+        <div class="card sof">
+<div class="form-control">
+  <form action="">
+    <input type="search" class="hotdog" placeholder="Search">
+  </form>
+</div>
+<div class="form-control">
+  <form class="card soft dark">
+    <input type="search" class="hotdog" placeholder="Search">
+  </form>
+</div>
+<div class="form-control">
+  <form action="" class="hotdog">
+   <span>&equiv;</span> <input type="search"  placeholder="Search">
+  </form>
+</div>
+
+
+        </div>
+      </div>
+    <br />
+    <!-- Utilities -->
+    <div class="styleguidecontainer">
+      <h2 id="Utilities">Utilities</h2>
+    <div class="grid gap">
+      <div class="col-xs-12 col-md-3">
+      <!-- Select -->
+
+  <h3>Select</h3>
+  <div class="custom-select" style="width:200px;">
+    <select>
+      <option value="0">Select NFTs:</option>
+      <option value="1">NFT#1</option>
+      <option value="2">NFT#2</option>
+      <option value="3">NFT#3</option>
+      <option value="4">NFT#4</option>
+      <option value="5">NFT#5</option>
+      <option value="6">NFT#6</option>
+      <option value="7">NFT#7</option>
+      <option value="8">NFT#8</option>
+      <option value="9">NFT#9</option>
+      <option value="10">NFT#10</option>
+      <option value="11">NFT#11</option>
+      <option value="12">NFT#12</option>
+    </select>
+  </div>
+  </div>
+ 
+      
+      <div class="col-xs-12 col-md-3">
+        <div>
+       <!-- Check Box -->
+
+  <h3>Check Box</h3>
+  <label class="checkboxContainer">NFT#1
+    <input type="checkbox" checked="checked">
+    <span class="checkmark"></span>
+  </label>
+  
+  <label class="checkboxContainer">NFT#2
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  
+  <label class="checkboxContainer">NFT#3
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  
+  <label class="checkboxContainer">NFT#4
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  </div>
+       
+      </div>
+          <!-- Alert Box -->
+      <div class="col-xs-12 col-md-3">
+        <div>
+         
+            <h3>Alert Box</h3>
+            <p>Click the button to display an alert box.</p>
+            <button onclick="myFunction()" class="buy-button">Try it</button>
+         
+        </div>
+      </div>
+      <!-- Favourite -->
+      
+      <div class="col-xs-12 col-md-3">
+        <h3>Favourite</h3>
+          <div class="favourite">
+           <input type="checkbox" id="heart-example" class="hidden">
+          <label for="heart-example">&hearts;</label>          
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      alert("You just did something really wrong");
+    }
+    </script>
+<!-- Scroll Top Button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+<br>
+    <!-- FOOTER -->
+          <div class="styleguidecontainer">
+      <h2 id="Footer">Footer</h2>
+   </div>
+    <footer>
+      <div class="static">
+        &copy;
+        <span id="copyright">
+          <script>
+            document
+              .getElementById("copyright")
+              .appendChild(document.createTextNode(new Date().getFullYear()));
+          </script>
+        </span>
+        Nhien Dang
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/scripts.js"></script>
+    <script>
+      new Carousel({
+        element: $(".carousel").eq(0),
+        timing: 6000,
+      });
+    </script>
+    <!--  -->
+    <script>
+      const navIcon = document.querySelector(".nav-icon");
+      const nav = document.querySelector("nav");
+      navIcon.onclick = function () {
+        nav.classList.toggle("show");
+      };
+    </script>
+ 
+  </body>
+</html>
