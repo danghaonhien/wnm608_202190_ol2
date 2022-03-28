@@ -57,7 +57,88 @@ echo $wholename;
 ?>
 
 </div>
+<hr>
 
+<?php 
+// SUPERGLOBAL
+// added variable on url- m4/notes/?name=Toto
+echo "<a href='?name=Toto'>name</a>";
+echo "<div>My name is {$_GET['name']}</div>";
+echo "<div>My age is {$_GET['age']}</div>";
+echo "<a href='?name=Toto&type=textarea'>type</a> <br>";
+
+echo "<{$_GET['type']}>My name is {$_GET['name']}</{$_GET['type']}>";
+?>
+<hr>
+
+<?php 
+// ARRAY
+
+
+$colors = array("red","green","blue");
+echo $colors[2];
+echo "
+<br>$colors[0]
+<br>$colors[1]
+<br>$colors[2]
+<br>
+";
+
+echo count($colors);
+?>
+
+<div style="color:<?=$colors[0]?>">This text is red</div>
+
+<hr>
+
+<?php 
+// Associative Array
+
+$colorsAssociative = [
+    "red" => "#f00",
+    "green" => "#0f0",
+    "blue" => "#00f",
+];
+
+echo $colorsAssociative['green'];
+?>
+<hr>
+
+<?php 
+// Casting
+
+$c = "$a";
+$d = $c*1;
+
+$colorsObject=(object)$colorsAssociative;
+
+echo "<hr>";
+
+// Array Index Notation
+echo $colors[2]."<br>";
+echo $colorsAssociative['blue']."<br>";
+echo $colorsAssociative[$colors[2]]."<br>";
+
+// Object Property Notation
+echo $colorsObject->blue."<br>";
+echo $colorsObject->{$colors[2]}."<br>";
+
+?>
+
+<?php 
+print_r($colors); 
+echo "<hr>";
+print_r($colorsAssociative);
+echo "<hr>";
+echo "<pre>",print_r($colorsObject),"</pre>";
+
+// Funtion
+function print_p($v){
+    echo "<pre>",print_r($v),"</pre>";
+}
+print_p($_GET);
+
+?>
 
 </body>
 </html>
