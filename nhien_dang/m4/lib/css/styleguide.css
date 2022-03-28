@@ -200,23 +200,6 @@ footer {
   align-content: center;
   position: relative;
 }
-/* ADVERTISEMENT */
-
-.newpro {
-  margin-left: 3em;
-}
-.advertisement {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
-  width: 100%;
-  background-color: black;
-}
-
-.last {
-  position: relative;
-}
 
 /* ITEMGRID */
 
@@ -243,7 +226,7 @@ footer {
 
 .hero {
   position: relative;
-  /* width: 100vw; */
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;

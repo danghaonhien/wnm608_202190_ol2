@@ -97,7 +97,7 @@
           </div>
         </div>
         <dl class="accordion">
-          <h3>Click to Read</h3>
+          <h3>Best Sellers</h3>
           <dt>I. Bauhaus#1</dt>
           <dd>
             <p>
