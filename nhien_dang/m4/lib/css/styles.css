@@ -3,7 +3,6 @@
 *,
 *::after,
 *::before {
-
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -32,8 +31,6 @@ body {
   --font-serif: "Futura", serif;
   --font-sans: Futura, Arial, Helvetica, sans-serif;
 }
-
-
 
 h1 {
   font-family: joost, sans-serif;

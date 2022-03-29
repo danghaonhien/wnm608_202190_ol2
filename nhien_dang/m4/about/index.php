@@ -11,7 +11,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-content">
-        <h1 class="hero-title">Contact Page</h1>
+        <h1 class="hero-title">About Page</h1>
 
        
       </div>

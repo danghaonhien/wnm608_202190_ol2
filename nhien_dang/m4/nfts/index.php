@@ -11,20 +11,32 @@
   <section class="hero">
       <div class="hero-content">
         <h1 class="hero-title">NFTs Page</h1>
-    <!-- Grid 1 -->
-    <div class="page-container">
+      </div>
+    </section>
+    <!-- Top Trending -->
+    <div class="topTrendingContainer">
+      <section class="topTrending">
+        <div class="topTrending-content">
+          <h1 class="topTrending-title">Top Trending</h1>
+          <h2 class="topTrending-subtitle">
+            We offer the most unique Bauhaus NFTs!
+          </h2>
+        </div>
+      </section>
+    </div>
+  <br>
       <!-- Carousel -->
       <div class="container2">
         <div class="carousel">
           <div class="slides">
             <div class="slide center">
-              <img src="../img/sunset.jpg" class="forCarousel" />
+              <img src="../img/sunset.jpg"  />
             </div>
             <div class="slide">
-              <img src="../img/sunset.jpg" class="forCarousel" />
+              <img src="../img/sunset.jpg"  />
             </div>
             <div class="slide">
-              <img src="../img/sunset.jpg" class="forCarousel" />
+              <img src="../img/sunset.jpg"  />
             </div>
           </div>
 
@@ -71,6 +83,7 @@
             </div>
           </div>
         </div>
+
         <dl class="accordion">
           <h3>This Month Best Sellers</h3>
           <dt>I. Bauhaus#1</dt>
@@ -106,23 +119,9 @@
             </p>
           </dd>
         </dl>
+     
       </div>
-
-       
-      </div>
-    </section>
-    <!-- Top Trending -->
-    <div class="topTrendingContainer">
-      <section class="topTrending">
-        <div class="topTrending-content">
-          <h1 class="topTrending-title">Top Trending</h1>
-          <h2 class="topTrending-subtitle">
-            We offer the most unique Bauhaus NFTs!
-          </h2>
-        </div>
-      </section>
-    </div>
-  <br>
+     
        <!-- Grid 2 -->
        <div class="grid-container">
         <div class="grid gap">
@@ -367,7 +366,7 @@
           </div>
         </div>
       </div>
-    </div>
+
     <?php include "../parts/footer.php"; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="../js/scripts.js"></script>

@@ -1,4 +1,3 @@
-
 /* LAYOUT CLASSES */
 .container {
   max-width: 1024px;
@@ -8,6 +7,7 @@
   background-color: var(--color-bauhaus-light);
   line-height: 2rem;
 }
+
 .container2 {
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  margin-bottom: 75px;
+  margin-bottom: 5rem;
 }
 .static {
   position: static;
@@ -109,7 +109,6 @@
   margin-bottom: 5rem;
 }
 
-
 /* Figure */
 
 .figure {
@@ -180,6 +179,3 @@
 #neutralDark {
   background-color: var(--color-neutral-dark);
 }
-
-
-

@@ -8,13 +8,20 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://use.fontawesome.com/89c4228ad7.js"></script>
+    <link rel="stylesheet" href="lib/css/styles.css" />
     <link rel="stylesheet" href="lib/css/styleguide.css" />
     <link rel="stylesheet" href="css/storetheme.css" />
     <link rel="stylesheet" href="lib/css/gridsystem.css" />
     <link rel="stylesheet" href="lib/css/carousel.css" />
     <link rel="stylesheet" href="lib/css/accordion.css" />
-    <link rel="stylesheet" type="text/css" href="lib/css/navigation.css" />
-    <link rel="stylesheet" type="text/css" href="lib/css/cards.css" />
+    <link rel="stylesheet" href="lib/css/navigation.css" />
+    <link rel="stylesheet" href="lib/css/cards.css" />
+    <link rel="stylesheet" href="lib/css/form.css" />
+    <link rel="stylesheet" href="lib/css/footer.css" />
+    <link rel="stylesheet" href="lib/css/table.css" />
+    <link rel="stylesheet" href="lib/css/utilities.css" />
+    <link rel="stylesheet" href="lib/css/form.css" />
+    <link rel="stylesheet" href="lib/css/hero.css" />
     <title>Bauhaus NFT</title>
   </head>
 
@@ -57,15 +64,23 @@
         <h2 class="hero-subtitle">
           Discover, collect, and invest Bauhaus NFTs
         </h2>
-        <form class="hero-input">
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            placeholder="Your Email Address"
-          />
-          <button type="button" class="hero-button">Get Started &raquo;</button>
-        </form>
+        <div class="grid gap">
+          <div class="col-xs-12 col-md-8">
+            <form class="hero-input">
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Your Email Address"
+              />
+            </form>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <button type="button" class="hero-button">
+              Get Started &raquo;
+            </button>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Top Trending -->

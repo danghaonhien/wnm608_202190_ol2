@@ -14,6 +14,8 @@
         <h2 class="hero-subtitle">
           Discover, collect, and invest Bauhaus NFTs
         </h2>
+        <div class="grid gap">
+          <div class="col-xs-12 col-md-8">
         <form class="hero-input">
           <input
             type="text"
@@ -21,8 +23,10 @@
             name="fname"
             placeholder="Your Email Address"
           />
-          <button type="button" class="hero-button">Get Started &raquo;</button>
-        </form>
+        </form> </div>
+        <div class="col-xs-12 col-md-4">
+        <button type="button" class="hero-button">Get Started &raquo;</button>
+</div>
       </div>
     </section>
     <!-- Top Trending -->
@@ -37,7 +41,7 @@
       </section>
     </div>
     <!-- Grid 1 -->
-    <div class="page-container">
+    <div class="styleguidecontainer">
       <!-- Carousel -->
       <div class="container2">
         <div class="carousel">
@@ -132,7 +136,7 @@
           </dd>
         </dl>
       </div>
-
+      </div>
       <!-- ViewWindow -->
       <div
         class="view-window"
@@ -261,7 +265,7 @@
           </div>
         </div>
       </div>
-    </div>
+   
 
     <!-- Footer -->
     <?php include "parts/footer.php"; ?>
