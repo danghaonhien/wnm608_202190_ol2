@@ -1,0 +1,34 @@
+/*Tables*/
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table th,
+  .table td {
+    text-align: left;
+    position: 0.2em 0.5 em;
+  }
+  
+  .table.striped tbody tr :nth-child(odd) {
+    background-color: var(--color-bauhaus-light);
+  }
+  
+  .table.lined.all th:not(:first-child),
+  .table.lined.all td:not(:first-child),
+  .table.lined.vertical th:not(:first-child),
+  .table.lined.vertical td:not(:first-child) {
+    border-left: 1px solid black;
+  }
+  
+  .table.lined.all,
+  body tr,
+  .table.lined.horizontal tbody tr {
+    border-top: 1px solid black;
+  }
+  
+  .table.lined.all,
+  .table.lined.border {
+    border: 1px solid black;
+  }
+  

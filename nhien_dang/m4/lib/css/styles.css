@@ -1,0 +1,70 @@
+/* CSS RESET */
+
+*,
+*::after,
+*::before {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 100%;
+  font-family: var(--font-sans);
+  padding: 0rem 1rem 0rem 1rem;
+}
+:root {
+  --color-neutral-light: #eee;
+  --color-neutral-medium: #999;
+  --color-neutral-dark: #555;
+  --color-bauhaus-red: #903a2b;
+  --color-bauhaus-yellow: #d0b541;
+  --color-bauhaus-dark: #222222;
+  --color-bauhaus-medium: #888888;
+  --color-bauhaus-light: #ededed;
+  --color-bauhaus-blue: #154084;
+  --color-black: #000;
+  --color-white: #fff;
+  --header-height: 3rem;
+  --spacing: 1rem;
+  --font-serif: "Futura", serif;
+  --font-sans: Futura, Arial, Helvetica, sans-serif;
+}
+
+
+
+h1 {
+  font-family: joost, sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
+
+a {
+  color: var(--color-bauhaus-light);
+  font-family: Futura, sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li,
+button {
+  font-family: "Futura", sans-serif;
+  font-weight: normal;
+  color: var(--color-bauhaus-light);
+  text-decoration: none;
+}
+
+p {
+  font-family: "Futura", sans-serif;
+}
