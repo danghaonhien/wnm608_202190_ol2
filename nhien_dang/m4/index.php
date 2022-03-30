@@ -66,7 +66,7 @@
                   <circle
                     cx="9"
                     cy="22"
-                    r="8"
+                    r="4"
                     stroke="white"
                     stroke-width="1.5"
                     fill="white"
@@ -78,7 +78,7 @@
                   <circle
                     cx="9"
                     cy="22"
-                    r="8"
+                    r="4"
                     stroke="white"
                     stroke-width="1.5"
                     fill="white"
@@ -90,7 +90,7 @@
                   <circle
                     cx="9"
                     cy="22"
-                    r="8"
+                    r="4"
                     stroke="white"
                     stroke-width="1.5"
                     fill="white"
@@ -137,6 +137,7 @@
         </dl>
       </div>
       </div>
+     
       <!-- ViewWindow -->
       <div
         class="view-window"

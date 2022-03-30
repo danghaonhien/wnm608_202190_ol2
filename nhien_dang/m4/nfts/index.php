@@ -25,18 +25,19 @@
       </section>
     </div>
   <br>
+  <div class="styleguidecontainer">
       <!-- Carousel -->
       <div class="container2">
         <div class="carousel">
           <div class="slides">
             <div class="slide center">
-              <img src="../img/sunset.jpg"  />
+              <img src="../img/sunset.jpg" class="forCarousel" />
             </div>
             <div class="slide">
-              <img src="../img/sunset.jpg"  />
+              <img src="../img/sunset.jpg" class="forCarousel" />
             </div>
             <div class="slide">
-              <img src="../img/sunset.jpg"  />
+              <img src="../img/sunset.jpg" class="forCarousel" />
             </div>
           </div>
 
@@ -49,7 +50,7 @@
                   <circle
                     cx="9"
                     cy="22"
-                    r="8"
+                    r="4"
                     stroke="white"
                     stroke-width="1.5"
                     fill="white"
@@ -61,7 +62,7 @@
                   <circle
                     cx="9"
                     cy="22"
-                    r="8"
+                    r="4"
                     stroke="white"
                     stroke-width="1.5"
                     fill="white"
@@ -73,7 +74,7 @@
                   <circle
                     cx="9"
                     cy="22"
-                    r="8"
+                    r="4"
                     stroke="white"
                     stroke-width="1.5"
                     fill="white"
@@ -83,9 +84,8 @@
             </div>
           </div>
         </div>
-
         <dl class="accordion">
-          <h3>This Month Best Sellers</h3>
+          <h3>Best Sellers</h3>
           <dt>I. Bauhaus#1</dt>
           <dd>
             <p>
@@ -119,7 +119,7 @@
             </p>
           </dd>
         </dl>
-     
+      </div>
       </div>
      
        <!-- Grid 2 -->

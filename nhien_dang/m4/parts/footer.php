@@ -25,6 +25,7 @@
 
                 
             </div> -->
+       
             <div class="grid gap">
                 <div class="col-xs-12 col-md-6">
                     <div class="footer_navigation">

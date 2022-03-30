@@ -6,21 +6,36 @@
     <?php include "../parts/subMeta.php"; ?>
 </head>
 <body>
-<?php include "../parts/subNavbar.php"; ?>
-    
+<?php include "../parts/subNavbar.php"; ?>  
     <!-- Hero -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1 class="hero-title">About Page</h1>
+  
+    <!-- <div class="about-hero">
+	<h1 class="hero-title">ABOUT US</h1>
+</div> -->
 
-       
-      </div>
-    </section>
+<!-- <div class="wrapper">
+  <div class="name_container">
+    <div class="name">Dinesh Balaji</div>
+    <div class="designation">Designer &amp; Developer</div>
+  </div>
+</div> -->
 
+<div class="about-hero">
+    <div class="about-hero-content">
+        <span class="about-hero-text">ABOUT US</span>
+    </div>
+</div>
+<div class="content">
+    <p>
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+    <br>
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+    </p>
+</div>
  <!-- Footer -->
  <?php include "../parts/footer.php"; ?>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" src="./js/scripts.js"></script>
 <script>
   new Carousel({
     element: $(".carousel").eq(0),
@@ -36,5 +51,6 @@
     nav.classList.toggle("show");
   };
 </script>
+<script type="text/javascript" src="../js/scripts.js"></script>
 </body>
 </html>

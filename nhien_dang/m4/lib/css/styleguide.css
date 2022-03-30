@@ -17,12 +17,6 @@
   flex-wrap: wrap;
   margin-bottom: 5rem;
 }
-.static {
-  position: static;
-  bottom: 0;
-  color: var(--color-white);
-  width: 100%;
-}
 .styleguidecontainer {
   max-width: 75%;
   margin-right: auto;
