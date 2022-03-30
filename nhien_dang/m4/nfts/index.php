@@ -126,10 +126,11 @@
        <div class="grid-container">
         <div class="grid gap">
           <div class="col-xs-12 col-md-3">
+          <a href="../nfts/nft_item.php?id=1">
             <article id="" class="card soft">
               <div class="display-flex flex-align-center">
                 <div class="flex-stretch">
-                  <h2>Article1</h2>
+                  <h2>Bauhaus NFT</h2>
                 </div>
                 <div class="flex-none">
                   <small>No.01</small>
@@ -151,6 +152,7 @@
                 </div>
               </div>
             </article>
+          </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <article id="" class="card soft">
@@ -366,8 +368,146 @@
           </div>
         </div>
       </div>
+<!-- BUNDLE -->
+<section class="section-bundle" id="section-bundle">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 >
+                        Most popular Bundles
+                    </h2>
+                </div>
 
+                <div class="grid gap">
+                    <div class="col-xs-12 col-md-4">
+                       <div class="card_bundle">
+                           <div class="card_bundle__side front">
+                                <div class="card_bundle__picture card_bundle__picture--1">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card_bundle__heading">
+                                    <span class="card_bundle__heading-span card_bundle__heading-span--1">Starter Bauhaus Bundle</span>
+                                </h4>
+                                <div class="card_bundle__details">
+                                    <ul>
+                                        <li>3 Random NFTs</li>
+                                        <li>Up to 30 Brands</li>
+                                        <li>2 Concert Tickets</li>
+                                        <li>3 Travel Tickets</li>
+                                        <li>Rare: Tier 1</li>
+                                    </ul>
+                                </div>
+                           </div>
+                           <div class="card_bundle__side card_bundle__side_back back-1 ">
+                                <div class="card_bundle__cta">
+                                    <div class="card_bundle__price-box">
+                                        <p class="card_bundle__price-only">Only</p>
+                                        <p class="card_bundle__price-value">$297</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Buy now!</a>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+
+
+                    <div class="col-xs-12 col-md-4">
+                       <div class="card_bundle">
+                           <div class="card_bundle__side front">
+                                <div class="card_bundle__picture card_bundle__picture--2">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card_bundle__heading">
+                                    <span class="card_bundle__heading-span card_bundle__heading-span--2">Upgraded Bauhaus Bundle</span>
+                                </h4>
+                                <div class="card_bundle__details">
+                                    <ul>
+                                        <li>5 Random NFTs</li>
+                                        <li>Up to 90 Brands</li>
+                                        <li>3 Concert Tickets</li>
+                                        <li>3 Travel Tickets</li>
+                                        <li>Rare: Tier 2</li>
+                                    </ul>
+                                </div>
+                           </div>
+                           <div class="card_bundle__side card_bundle__side_back back-2 ">
+                                <div class="card_bundle__cta">
+                                    <div class="card_bundle__price-box">
+                                        <p class="card_bundle__price-only">Only</p>
+                                        <p class="card_bundle__price-value">$597</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Buy now!</a>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+
+
+                    <div class="col-xs-12 col-md-4">
+                       <div class="card_bundle">
+                           <div class="card_bundle__side front">
+                                <div class="card_bundle__picture card_bundle__picture--3">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card_bundle__heading">
+                                    <span class="card_bundle__heading-span card_bundle__heading-span--3">Ultimate Bauhaus Bundle</span>
+                                </h4>
+                                <div class="card_bundle__details">
+                                    <ul>
+                                        <li>7 Random NFTs</li>
+                                        <li>Up to 150 Brands</li>
+                                        <li>5 Concert Tickets</li>
+                                        <li>5 Travel Tickets</li>
+                                        <li>Rare: Tier 3</li>
+                                    </ul>
+                                </div>
+                           </div>
+                           <div class="card_bundle__side card_bundle__side_back back-3 ">
+                                <div class="card_bundle__cta">
+                                    <div class="card_bundle__price-box">
+                                        <p class="card_bundle__price-only">Only</p>
+                                        <p class="card_bundle__price-value">$797</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Buy now!</a>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    </div>
+
+                <div class="u-center-text u-margin-top-huge">
+                    <a href="#" class="btn btn--green">Discover all Bundles</a>
+                </div>
+            </section>
+
+
+            <!-- FOOTER -->
     <?php include "../parts/footer.php"; ?>
+
+    <!-- PopUp -->
+    <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start Buying now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before Buying</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit
+                        amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim
+                        sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget
+                        gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet.
+                        Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus
+                        vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa
+                        vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
+                        euismod nisi porta.
+                    </p>
+                    <a href="#" class="btn btn--green">Buy now</a>
+                </div>
+            </div>
+        </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="../js/scripts.js"></script>
     <script>

@@ -1,0 +1,222 @@
+/* // FUNCTIONALITY */
+.section-bundle {
+    background-color: var(--color-bauhaus-light);
+    padding: 25rem 0 15rem 0;
+    margin-top: -10rem;
+}
+.card_bundle {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 52rem;
+  ;
+}
+    .card_bundle__side {
+        height: 52rem;
+        transition: all 1s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
+    }
+        .card_bundle__side.front {
+            background-color: var(--color-bauhaus-light);
+        }
+
+        .card_bundle__side_back {
+            transform: rotateY(180deg);
+            
+        }
+            .card_bundle__side.back-1 {
+                background-image: linear-gradient(to right bottom, var(--color-bauhaus-light),  var(--color-bauhaus-blue));
+            }
+
+            .card_bundle__side.back-2 {
+                background-image: linear-gradient(to right bottom, var(--color-bauhaus-light),  var(--color-bauhaus-yellow));
+            }
+
+            .card_bundle__side.back-3 {
+                background-image: linear-gradient(to right bottom, var(--color-bauhaus-light),  var(--color-bauhaus-red));
+            }
+        
+    
+  
+
+    .card_bundle:hover   .card_bundle__side.front{
+        transform: rotateY(-180deg);
+   
+    }
+ 
+    .card_bundle:hover .card_bundle__side_back {
+        transform: rotateY(0);
+    
+     
+    }
+
+    /* // FRONT SIDE STYLING */
+    .card_bundle__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        
+    }
+    .card_bundle__picture--1 {
+        background-image: linear-gradient(to right bottom, var(--color-bauhaus-light),  var(--color-bauhaus-blue)), 
+        url(/wnm608/nhien_dang/m4/img/);
+    }
+
+    .card_bundle__picture--2 {
+        background-image: linear-gradient(to right bottom, var(--color-bauhaus-light),  var(--color-bauhaus-yellow)), 
+        url(/img/sunset.jpg);
+    }
+
+    .card_bundle__picture--3 {
+        background-image: linear-gradient(to right bottom, var(--color-bauhaus-light),  var(--color-bauhaus-red)), 
+        url(/img/sunset.jpg);
+    }
+
+    .card_bundle__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: var(--color-bauhaus-light);
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+    
+    }
+
+    .card_bundle__heading-span {
+        padding: .5rem 1.5rem;
+        -webkit-box-decoration-break:clone;
+        box-decoration-break: clone;
+    
+       
+    }
+    .card_bundle__heading-span--1 {
+        background-image: linear-gradient(to right bottom, 
+        var(--color-bauhaus-light),  var(--color-bauhaus-blue));
+    }
+
+    .card_bundle__heading-span--2 {
+        background-image: linear-gradient(to right bottom, 
+        var(--color-bauhaus-light),  var(--color-bauhaus-yellow));
+    }
+
+    .card_bundle__heading-span--3 {
+        background-image: linear-gradient(to right bottom, 
+        var(--color-bauhaus-light),  var(--color-bauhaus-red));
+    }
+
+    .card_bundle__details {
+        padding: 3rem;
+        color: var(--color-bauhaus-dark);
+        
+    }
+    li:not(:last-child) {
+        border-bottom: 1px solid var(--color-bauhaus-medium);
+    }
+    .card_bundle__details ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+    }
+        .card_bundle__details   li {
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 1rem;
+        }
+         
+        
+    
+
+    /* // FRONT SIDE STYLING */
+    .card_bundle__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    .card_bundle__price-box {
+        text-align: center;
+        color: var(--color-bauhaus-light);
+        margin-bottom: 8rem;
+    }
+
+    .card_bundle__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    .card_bundle__price-value {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+
+
+
+
+
+    /* //@include respond(tab-port) {
+    @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
+
+        height: auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        
+        .card_bundle__side {
+            height: auto;
+            position: relative;
+            box-shadow: none;
+
+            .card_bundle--back {
+                transform: rotateY(0);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+    
+        .card_bundle:hover .card_bundle__side--front {
+            transform: rotateY(0);
+        }
+
+    
+        .card_bundle__details {
+            padding: 1rem 3rem;
+        } */
+
+        /* // FRONT SIDE STYLING */
+        /* .card_bundle__cta {
+            position: relative;
+            top: 0%;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+            padding: 7rem 4rem 4rem 4rem;
+        }
+
+        .card_bundle__price-box {
+            margin-bottom: 3rem;
+        }
+
+        .card_bundle__price-value {
+            font-size: 4rem;
+        }
+    }
+
+} */

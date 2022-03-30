@@ -16,3 +16,5 @@
     <link rel="stylesheet" href="../lib/css/utilities.css?<?php echo time(); ?>"/>
     <link rel="stylesheet" href="../lib/css/form.css?<?php echo time(); ?>"/>
     <link rel="stylesheet" href="../lib/css/hero.css?<?php echo time(); ?>"/>
+    <link rel="stylesheet" href="../lib/css/bundle.css?<?php echo time(); ?>"/>
+    <link rel="stylesheet" href="../lib/css/popup.css?<?php echo time(); ?>"/>
