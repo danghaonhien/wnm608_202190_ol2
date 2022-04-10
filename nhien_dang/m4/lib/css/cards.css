@@ -7,8 +7,9 @@
   padding: 2em;
   overflow: hidden;
   position: relative;
-  transition: transform 0.3s; /* Animation */
+  transition: all .8s ease;
   border-radius: 0.5em;
+color: var(--color-bauhaus-dark);
 }
 
 .cardStyle {
@@ -68,19 +69,31 @@
   margin-right: 25px;
 }
 .cardImage {
-  transition: transform 0.3s; /* Animation */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  width: 400px;
-  height: 500px;
+  width: 16.75rem;
+  height: 25rem;
   object-fit: cover;
+  transition: all .8s ease;
 }
 .cardImage:hover {
-  transform: scale(1.025);
+  transform: scale(1.005);
+}
+.cardImageItem {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 16.75rem;
+  height: 25rem;
+  object-fit: cover;
+  transition: all .8s ease;
+}
+.cardImageItem:hover {
+  transform: scale(1.005);
 }
 .cardImageStyle {
-  transition: transform 0.3s; /* Animation */
+  transition: all .8s ease;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -126,11 +139,22 @@ footer {
 }
 @media (max-width: 768px) {
   .cardImageStyle {
-    width: 300px;
-    height: 350px;
+    width: 18.75rem;
+  height: 25rem;
   }
   .cardImage {
-    width: 300px;
-    height: 350px;
+    width: 18.75rem;
+    height: 25rem;
   }
+
+}
+
+.nft-card-container {
+  margin-top: 10rem;
+  max-width: 20.75rem;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  background-color: var(--color-bauhaus-light);
+  line-height: 2rem;
 }

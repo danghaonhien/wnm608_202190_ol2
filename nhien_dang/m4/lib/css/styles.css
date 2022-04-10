@@ -28,11 +28,12 @@ body {
   --header-height: 3rem;
   --spacing: 1rem;
   --font-serif: "Futura", serif;
-  --font-sans: Futura, Arial, Helvetica, sans-serif;
+  --font-sans: Futura, Arial, Helvetica, joost sans-serif;
 }
 
 h1 {
   font-family: joost, sans-serif;
+  font-weight: 900;
 }
 h2,
 h3,

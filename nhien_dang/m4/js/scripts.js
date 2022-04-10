@@ -215,6 +215,10 @@ $(function () {
     $(".lightbox").removeClass("active");
   });
 });
+///Accordian NFT
+$(".accordion_nft dt").on("click", function () {
+  $(this).next().slideToggle();
+});
 
 // Select
 var x, i, j, l, ll, selElmnt, a, b, c;

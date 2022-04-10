@@ -1,7 +1,8 @@
 .accordion {
-  width: 25%;
+  width: 30%;
   margin-left: 50px;
 }
+
 
 .accordion dt {
   color: rgba(215, 180, 24, 0.8);
@@ -91,4 +92,59 @@ dd {
   video {
     width: 100%;
   }
+}
+
+
+
+.accordion_nft {
+  width: 45%;
+  margin-left: 50px;
+}
+
+.accordion_nft dt {
+  color: rgba(215, 180, 24, 0.8);
+  font-weight: bolder;
+}
+
+.accordion_nft dt {
+  padding: 0.75em;
+  background-color: rgba(157, 39, 25, 0.7);
+  border-radius: 2px;
+  margin-bottom: 1em;
+}
+
+.accordion_nft dt::after {
+  content: " ";
+}
+
+.accordion_nft dd {
+  font-size: 1em;
+  margin-left: 0;
+  padding: 0em 0.5em 1.25em 0.5em;
+  display: none;
+}
+
+.accordion_nft dl,
+dt,
+dd {
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.accordion_nft dt:hover,
+.accordion_nft dt:active {
+  transition: all 2s;
+  transform: translateX(1rem);
+  cursor: pointer;
+  box-shadow: 1px 1px rgba(0, 98, 90, 0.4), 5px 5px rgba(0, 98, 90, 0.3),
+    10px 10px rgba(0, 98, 90, 0.2), 15px 15px rgba(0, 98, 90, 0.1),
+    20px 20px rgba(0, 98, 90, 0.05);
+  color: var(--color-bauhaus-light);
+  background-image: linear-gradient(
+    transparent 100%,
+    transparent 25%,
+    #fff 50%
+  );
+
 }

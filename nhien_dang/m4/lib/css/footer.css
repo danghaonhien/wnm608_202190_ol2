@@ -40,7 +40,7 @@
     display: inline-block;
     transition: all .2s;
 }
-.footer_link:hover:active{
+.footer_link:hover{
     color: var(--color-bauhaus-red);
     width: 100%;
     float: none;;

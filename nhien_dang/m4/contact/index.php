@@ -3,10 +3,10 @@
 <head>
 
     <title>BauhausNFTs</title>
-    <?php include "../parts/subMeta.php"; ?>
+    <?php include "../parts/meta.php"; ?>
 </head>
 <body>
-<?php include "../parts/subNavbar.php"; ?>
+<?php include "../parts/navbar.php"; ?>
       <!-- Hero -->
       <section class="hero">
       <div class="hero-content">

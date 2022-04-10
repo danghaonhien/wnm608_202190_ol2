@@ -1,3 +1,4 @@
+<base href="https://nhien-dang.com/aau/wnm608/nhien_dang/m4/">
 <nav>
       <div class="nav-content">
         <!-- logo -->
@@ -29,3 +30,4 @@
         </div>
       </div>
     </nav>
+  

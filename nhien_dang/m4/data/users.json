@@ -1,0 +1,33 @@
+[
+    {
+    "name": "Toto",
+    "type":"Architect",
+    "email":"toto@academyart.edu",
+    "classes":[711,125,190]
+    },
+    {
+    "name": "Emily",
+    "type":"Social Media Specialist",
+    "email":"emily@academyart.edu",
+    "classes":[715,135,290]
+    },
+    {
+    "name": "Bless",
+    "type":"Pet Therapist",
+    "email":"bless@academyart.edu",
+    "classes":[215,535,297]
+
+    },
+    {
+    "name": "Apple",
+    "type":"Angel Investor",
+    "email":"apple@academyart.edu",
+    "classes":[716,132,291]
+    },
+    {
+    "name": "Elon Musk",
+    "type":"Richest Man on Earth",
+    "email":"elon@academyart.edu",
+    "classes":[116,232,391]
+    }
+]

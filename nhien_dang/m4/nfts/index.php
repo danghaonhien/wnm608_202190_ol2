@@ -3,41 +3,28 @@
 <head>
 
     <title>BauhausNFTs</title>
-    <?php include "../parts/subMeta.php"; ?>
+    <?php include "../parts/meta.php"; ?>
 </head>
 <body>
-<?php include "../parts/subNavbar.php"; ?>
+<?php include "../parts/navbar.php"; ?>
   <!-- Hero -->
   <section class="hero">
       <div class="hero-content">
         <h1 class="hero-title">NFTs Page</h1>
-      </div>
-    </section>
-    <!-- Top Trending -->
-    <div class="topTrendingContainer">
-      <section class="topTrending">
-        <div class="topTrending-content">
-          <h1 class="topTrending-title">Top Trending</h1>
-          <h2 class="topTrending-subtitle">
-            We offer the most unique Bauhaus NFTs!
-          </h2>
-        </div>
-      </section>
-    </div>
-  <br>
-  <div class="styleguidecontainer">
+      
       <!-- Carousel -->
-      <div class="container2">
+      <div class="grid">
+      <div class="col-xs-12 col-md-6">
         <div class="carousel">
           <div class="slides">
             <div class="slide center">
-              <img src="../img/sunset.jpg" class="forCarousel" />
+              <img src="img/sunset.jpg" class="forCarousel" />
             </div>
             <div class="slide">
-              <img src="../img/sunset.jpg" class="forCarousel" />
+              <img src="img/sunset.jpg" class="forCarousel" />
             </div>
             <div class="slide">
-              <img src="../img/sunset.jpg" class="forCarousel" />
+              <img src="img/sunset.jpg" class="forCarousel" />
             </div>
           </div>
 
@@ -84,6 +71,8 @@
             </div>
           </div>
         </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
         <dl class="accordion">
           <h3>Best Sellers</h3>
           <dt>I. Bauhaus#1</dt>
@@ -121,9 +110,25 @@
         </dl>
       </div>
       </div>
+      </div>
+    </section>
+
+    <!-- Top Trending -->
+    <div class="topTrendingContainer">
+      <section class="topTrending">
+        <div class="topTrending-content">
+          <h1 class="topTrending-title">Top Trending</h1>
+          <h2 class="topTrending-subtitle">
+            We offer the most unique Bauhaus NFTs!
+          </h2>
+        </div>
+      </section>
+    </div>
+  <br>
+
      
        <!-- Grid 2 -->
-       <div class="grid-container">
+       <div class="styleguidecontainer">
         <div class="grid gap">
           <div class="col-xs-12 col-md-3">
           <a href="../nfts/nft_item.php?id=1">
@@ -138,14 +143,17 @@
               </div>
 
               <dive class="article-body">
-                <img class="cardImage" src="../img/sunset.jpg" alt="" />
+                <img class="cardImage" src="img/sunset.jpg" alt="" />
               </dive>
               <div class="item-grid display-flex flex-align-center">
                 <div class="flex-stretch">
                   <h3>Price</h3>
                   <small
-                    >0.08 <span><i class="fab fa-ethereum"></i></span
-                  ></small>
+                    >0.08 ETH <span><i class="fab fa-ethereum"></i></span
+                  ></small>    <div class="favourite">
+           <input type="checkbox" id="heart-example" class="hidden">
+          <label for="heart-example">&hearts;</label>          
+        </div>
                 </div>
                 <div class="flex-none">
                   <button type="button" class="buy-button">BUY NOW</button>
@@ -155,38 +163,44 @@
           </a>
           </div>
           <div class="col-xs-12 col-md-3">
+            <a href="../nfts/nft_item.php?id=2">
             <article id="" class="card soft">
               <div class="display-flex flex-align-center">
                 <div class="flex-stretch">
-                  <h2>Article1</h2>
+                  <h2>Bauhaus NFT</h2>
                 </div>
                 <div class="flex-none">
                   <small>No.02</small>
                 </div>
+                
               </div>
 
               <dive class="article-body">
-                <img class="cardImage" src="../img/sunset.jpg" alt="" />
+                <img class="cardImage" src="img/sunset.jpg" alt="" />
               </dive>
               <div class="item-grid display-flex flex-align-center">
                 <div class="flex-stretch">
                   <h3>Price</h3>
-                  <small
-                    >0.08 <span><i class="fab fa-ethereum"></i></span
-                  ></small>
+                  <small>0.08 ETH <span> </small>
+                  <div class="favourite">
+           <input type="checkbox" id="heart-example" class="hidden">
+          <label for="heart-example">&hearts;</label>          
+        </div>
                 </div>
                 <div class="flex-none">
                   <button type="button" class="buy-button">BUY NOW</button>
                 </div>
               </div>
             </article>
+</a>
           </div>
 
           <div class="col-xs-12 col-md-3">
+          <a href="../nfts/nft_item.php?id=3">
             <article id="" class="card soft">
               <div class="display-flex flex-align-center">
                 <div class="flex-stretch">
-                  <h2>Article1</h2>
+                  <h2>Bauhaus NFT</h2>
                 </div>
                 <div class="flex-none">
                   <small>No.03</small>
@@ -194,26 +208,31 @@
               </div>
 
               <dive class="article-body">
-                <img class="cardImage" src="../img/sunset.jpg" alt="" />
+                <img class="cardImage" src="img/sunset.jpg" alt="" />
               </dive>
               <div class="item-grid display-flex flex-align-center">
                 <div class="flex-stretch">
                   <h3>Price</h3>
                   <small
-                    >0.08 <span><i class="fab fa-ethereum"></i></span
-                  ></small>
+                    >0.08 ETH <span><i class="fab fa-ethereum"></i></span
+                  ></small>    <div class="favourite">
+           <input type="checkbox" id="heart-example" class="hidden">
+          <label for="heart-example">&hearts;</label>          
+        </div>
                 </div>
                 <div class="flex-none">
                   <button type="button" class="buy-button">BUY NOW</button>
                 </div>
               </div>
             </article>
+          </a>
           </div>
           <div class="col-xs-12 col-md-3">
+          <a href="../nfts/nft_item.php?id=3">
             <article id="" class="card soft">
               <div class="display-flex flex-align-center">
                 <div class="flex-stretch">
-                  <h2>Article1</h2>
+                  <h2>Bauhaus NFT</h2>
                 </div>
                 <div class="flex-none">
                   <small>No.04</small>
@@ -221,20 +240,24 @@
               </div>
 
               <dive class="article-body">
-                <img class="cardImage" src="../img/sunset.jpg" alt="" />
+                <img class="cardImage" src="img/sunset.jpg" alt="" />
               </dive>
               <div class="item-grid display-flex flex-align-center">
                 <div class="flex-stretch">
                   <h3>Price</h3>
                   <small
-                    >0.08 <span><i class="fab fa-ethereum"></i></span
-                  ></small>
+                    >0.08 ETH <span><i class="fab fa-ethereum"></i></span
+                  ></small>    <div class="favourite">
+           <input type="checkbox" id="heart-example" class="hidden">
+          <label for="heart-example">&hearts;</label>          
+        </div>
                 </div>
                 <div class="flex-none">
                   <button type="button" class="buy-button">BUY NOW</button>
                 </div>
               </div>
             </article>
+          </a>
           </div>
         </div>
       </div>
@@ -255,13 +278,14 @@
     </div>
   <br>
        <!-- Grid 2 -->
-       <div class="grid-container">
+       <div class="styleguidecontainer">
         <div class="grid gap">
           <div class="col-xs-12 col-md-3">
+          <a href="../nfts/nft_item.php?id=1">
             <article id="" class="card soft">
               <div class="display-flex flex-align-center">
                 <div class="flex-stretch">
-                  <h2>Article1</h2>
+                  <h2>Bauhaus NFT</h2>
                 </div>
                 <div class="flex-none">
                   <small>No.01</small>
@@ -269,26 +293,31 @@
               </div>
 
               <dive class="article-body">
-                <img class="cardImage" src="../img/sunset.jpg" alt="" />
+                <img class="cardImage" src="img/sunset.jpg" alt="" />
               </dive>
               <div class="item-grid display-flex flex-align-center">
                 <div class="flex-stretch">
                   <h3>Price</h3>
                   <small
-                    >0.08 <span><i class="fab fa-ethereum"></i></span
-                  ></small>
+                    >0.08 ETH <span><i class="fab fa-ethereum"></i></span
+                  ></small>    <div class="favourite">
+           <input type="checkbox" id="heart-example" class="hidden">
+          <label for="heart-example">&hearts;</label>          
+        </div>
                 </div>
                 <div class="flex-none">
                   <button type="button" class="buy-button">BUY NOW</button>
                 </div>
               </div>
             </article>
+          </a>
           </div>
           <div class="col-xs-12 col-md-3">
+            <a href="../nfts/nft_item.php?id=2">
             <article id="" class="card soft">
               <div class="display-flex flex-align-center">
                 <div class="flex-stretch">
-                  <h2>Article1</h2>
+                  <h2>Bauhaus NFT</h2>
                 </div>
                 <div class="flex-none">
                   <small>No.02</small>
@@ -296,27 +325,32 @@
               </div>
 
               <dive class="article-body">
-                <img class="cardImage" src="../img/sunset.jpg" alt="" />
+                <img class="cardImage" src="img/sunset.jpg" alt="" />
               </dive>
               <div class="item-grid display-flex flex-align-center">
                 <div class="flex-stretch">
                   <h3>Price</h3>
                   <small
-                    >0.08 <span><i class="fab fa-ethereum"></i></span
-                  ></small>
+                    >0.08 ETH <span><i class="fab fa-ethereum"></i></span
+                  ></small>    <div class="favourite">
+           <input type="checkbox" id="heart-example" class="hidden">
+          <label for="heart-example">&hearts;</label>          
+        </div>
                 </div>
                 <div class="flex-none">
                   <button type="button" class="buy-button">BUY NOW</button>
                 </div>
               </div>
             </article>
+</a>
           </div>
 
           <div class="col-xs-12 col-md-3">
+          <a href="../nfts/nft_item.php?id=3">
             <article id="" class="card soft">
               <div class="display-flex flex-align-center">
                 <div class="flex-stretch">
-                  <h2>Article1</h2>
+                  <h2>Bauhaus NFT</h2>
                 </div>
                 <div class="flex-none">
                   <small>No.03</small>
@@ -324,26 +358,31 @@
               </div>
 
               <dive class="article-body">
-                <img class="cardImage" src="../img/sunset.jpg" alt="" />
+                <img class="cardImage" src="img/sunset.jpg" alt="" />
               </dive>
               <div class="item-grid display-flex flex-align-center">
                 <div class="flex-stretch">
                   <h3>Price</h3>
                   <small
-                    >0.08 <span><i class="fab fa-ethereum"></i></span
-                  ></small>
+                    >0.08 ETH <span><i class="fab fa-ethereum"></i></span
+                  ></small>    <div class="favourite">
+           <input type="checkbox" id="heart-example" class="hidden">
+          <label for="heart-example">&hearts;</label>          
+        </div>
                 </div>
                 <div class="flex-none">
                   <button type="button" class="buy-button">BUY NOW</button>
                 </div>
               </div>
             </article>
+          </a>
           </div>
           <div class="col-xs-12 col-md-3">
+          <a href="../nfts/nft_item.php?id=4">
             <article id="" class="card soft">
               <div class="display-flex flex-align-center">
                 <div class="flex-stretch">
-                  <h2>Article1</h2>
+                  <h2>Bauhaus NFT</h2>
                 </div>
                 <div class="flex-none">
                   <small>No.04</small>
@@ -351,30 +390,42 @@
               </div>
 
               <dive class="article-body">
-                <img class="cardImage" src="../img/sunset.jpg" alt="" />
+                <img class="cardImage" src="img/sunset.jpg" alt="" />
               </dive>
               <div class="item-grid display-flex flex-align-center">
                 <div class="flex-stretch">
                   <h3>Price</h3>
                   <small
-                    >0.08 <span><i class="fab fa-ethereum"></i></span
-                  ></small>
+                    >0.08 ETH <span><i class="fab fa-ethereum"></i></span
+                  ></small>    <div class="favourite">
+           <input type="checkbox" id="heart-example" class="hidden">
+          <label for="heart-example">&hearts;</label>          
+        </div>
                 </div>
                 <div class="flex-none">
                   <button type="button" class="buy-button">BUY NOW</button>
                 </div>
               </div>
             </article>
+          </a>
           </div>
         </div>
       </div>
+    </div>
+         <!-- Top Trending -->
+         <div class="topTrendingContainer">
+    
+        <div class="topTrending-content">
+          <h1 class="topTrending-title">Most Popular Bundles</h1>
+          <h2 class="topTrending-subtitle">
+            We offer the most unique Bauhaus NFTs!
+          </h2>
+        </div>
+    
+    </div>
+  <br>
 <!-- BUNDLE -->
-<section class="section-bundle" id="section-bundle">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 >
-                        Most popular Bundles
-                    </h2>
-                </div>
+<section class="section-bundle styleguidecontainer" id="section-bundle">
 
                 <div class="grid gap">
                     <div class="col-xs-12 col-md-4">
@@ -509,7 +560,7 @@
             </div>
         </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <script>
       new Carousel({
         element: $(".carousel").eq(0),
