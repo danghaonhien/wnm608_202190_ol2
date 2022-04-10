@@ -1,23 +1,13 @@
 <?php 
-
-include "../lib/php/functions.php";
-
-
+include "../lib/css/php/functions.php";
 $users = file_get_json("../data/users.json");
-
-
 // file_put_contents json_encode explode $_POST
-
 // CRUD, CREATE READ UPDATE DELETE
-
 function showUserPage($user) {
-
 $classes = implode(",",$user -> classes);
-
-
     echo <<<HTML
     <div>
-        <h2>$user</h2>
+    <h2>$user->name</h2>
         <div>
             <strong>Name</strong>
           <input type="text" placeholder="$user->name" class="form-input">
@@ -35,24 +25,15 @@ $classes = implode(",",$user -> classes);
               <input type="text" placeholder="$classes" class="form-input">
         </div> 
          <div class="form-control">
-                <button class="form-button">Submit</button>
+         <input type="submit" value="Submit">
             </div>
-             <nav class="nav nav-crumbs";>
-        <ul>
-            <li><a href="admin/users.php">⬅Back</a></li>
-        </ul>
-    </nav>
+            
+        <a href="admin/users.php">⬅Back</a>
+        
+   
     </div>
     HTML;    
 }
-
-
-
-
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,25 +44,27 @@ $classes = implode(",",$user -> classes);
     <?php include"../parts/meta.php"; ?>
 </head>
 <body>
-
-  <header class="navbar">
-    <div class="container display-flex">
-        <div class="flex-none">
-            <h1>User Admin</h1>
+<nav>
+      <div class="nav-content">
+  
+        <!-- navigation button -->
+        <div class="nav-icon">
+          <div class="bar one"></div>
+          <div class="bar two"></div>
         </div>
-        <div class="flex-stretch"></div>
-        <nav class="nav nav-flex flex-none">
-            <ul>
-                <li><a href="admin/users.php">User List</a> </li>
-            </ul>
-        </nav>
-    </div>
-  </header>
 
+        <!-- naviagtion links -->
+        <div class="nav-links">
+          <a>User Admin</a>
+          <a href="admin/users.php">User List</a>
+      
+        </div>
+      </div>
+    </nav>
+<br>
+    <div class="styleguidecontainer">
 
-    <div class="container">
-
-    <div class="card soft">
+    <div class="nav-container card soft">
 
       <?php 
       
@@ -95,7 +78,7 @@ if(isset($_GET['id'])) {
     <h2>Users List</h2>
  
 
-    <nav class="nav">
+    <div class="nav">
         <ul>
     <?php 
 
@@ -109,7 +92,7 @@ if(isset($_GET['id'])) {
 
      ?>
        </ul>
-    </nav> 
+</div> 
 
 
         <?php }  ?>
