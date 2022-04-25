@@ -3,7 +3,7 @@
 include_once "lib/css/php/functions.php";
 include_once "parts/templates.php";
 
-$cart = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` IN (6,7,10)");
+$cart = makeQuery(makeConn(), "SELECT * FROM `NFTs` WHERE `id` IN (1,2,3)");
 
 
 ?>

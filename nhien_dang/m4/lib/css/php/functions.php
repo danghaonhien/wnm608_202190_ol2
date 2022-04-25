@@ -10,7 +10,7 @@ function print_p($v) {
       $file = file_get_contents($filename);
       return json_decode($file);
    }
-   include "auth.php";
+   include_once "auth.php";
 function makeConn(){
 	$conn = new mysqli(...MYSQLIAuth());
 	if($conn->connect_errno) die($conn->connect_error);

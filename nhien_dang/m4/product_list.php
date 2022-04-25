@@ -15,7 +15,7 @@
 
 
 	<div class="styleguidecontainer">
-		<div class="card soft">
+		<div class="">
 			<h2>Product List</h2>
 			<!-- <ul>
 				<li><a href="product_item.php?id=1">Product One</a></li>
@@ -29,12 +29,12 @@
 			include_once "parts/templates.php";
 			$result = makeQuery(makeConn(), "
 				SELECT *
-				FROM `products`
+				FROM `NFTs`
 				ORDER BY `price`
-				-- LIMIT 5
+				-- LIMIT 12
 			");
 			// print_p($result);
-			echo "<div class='productlist grid gap'>", array_reduce($result, 'productListTemplate'), "</div>";
+			echo "<div class='grid gap'>", array_reduce($result, 'productListTemplate'), "</div>";
 			?>
 
 		</div>

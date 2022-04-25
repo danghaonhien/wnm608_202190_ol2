@@ -108,16 +108,18 @@ img {
 ./*FIGURES*/
 .figure{
   margin: 0;
-  background-color: var(--color-bauhaus-dark);
+  background-color: var(--color-bauhaus-light);
   box-shadow: 0 0 10px rgba(0,0,0,0.1)
 
 }
 .figure img{
-  width: 100%;
+  width:100%;
   vertical-align: text-bottom;
+  object-fit:cover
 }
 .figure figcaption{
   padding: 1em;
+  color: var(--color-bauhaus-dark);
 }
 
 /* Color */
