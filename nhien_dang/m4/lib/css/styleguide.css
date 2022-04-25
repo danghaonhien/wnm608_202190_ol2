@@ -1,4 +1,7 @@
 /* LAYOUT CLASSES */
+img {
+  object-fit: cover;
+}
 .container {
   max-width: 1024px;
   margin-right: auto;
@@ -102,18 +105,18 @@
   margin-top: 1rem;
   margin-bottom: 5rem;
 }
-
-/* Figure */
-
-.figure {
+./*FIGURES*/
+.figure{
   margin: 0;
-  background-color: var(--color-white);
-  display: block;
+  background-color: var(--color-bauhaus-dark);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1)
+
 }
-.figure img {
+.figure img{
   width: 100%;
+  vertical-align: text-bottom;
 }
-.figure figcaption {
+.figure figcaption{
   padding: 1em;
 }
 

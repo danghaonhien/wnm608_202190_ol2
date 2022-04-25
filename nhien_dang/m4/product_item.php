@@ -2,15 +2,15 @@
             
 include_once "lib/css/php/functions.php";
 
-$product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
+$NFTs = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
-$images = explode(",", $product->images);
+$images = explode(",", $NFTs->images);
 
 $image_elements = array_reduce($images,function($r,$o){
     return $r."<img src='img/$o'>";
 }); 
 
-// print_p($product);
+// print_p($NFTs);
 
 ?> <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +34,7 @@ $image_elements = array_reduce($images,function($r,$o){
             <div class="col-xs-12 col-md-7">
                 <div class="card ">
                     <div class="images-main">
-                        <img src="img/<?= $product->thumbnail ?>">
+                        <img src="img/<?= $NFTs->thumbnail ?>">
                     </div>
                     <div class="images-thumbs">
                         <?= $image_elements ?>
@@ -44,8 +44,8 @@ $image_elements = array_reduce($images,function($r,$o){
             <div class="col-xs-12 col-md-5">
                 <div class="card ">
                     <div class="card-section">
-                        <h2 class="product-title"><?= $product->name ?></h2>
-                        <div class="product-price">&dollar;<?= $product->price ?></div>
+                        <h2 class="product-title"><?= $NFTs->name ?></h2>
+                        <div class="product-price">&dollar;<?= $NFTs->price ?></div>
                     </div>
 
                     <div class="card-selection">
@@ -82,10 +82,10 @@ $image_elements = array_reduce($images,function($r,$o){
                     </div>
 
                     <div class="card-section">
-                        <a href="product_added_to_cart.php?id=<?= $product->id ?>" class="form-button">Add To Cart</a>
+                        <a href="product_added_to_cart.php?id=<?= $NFTs->id ?>" class="form-button">Add To Cart</a>
                             <div class="card ">
 
-                           <p> DETAILS:<?= $product->description ?></p>   
+                           <p> DETAILS:<?= $NFTs->description ?></p>   
 
                     </div>
                 </div>

@@ -1,14 +1,16 @@
 <?php
-			
+
 include_once "lib/css/php/functions.php";
 
-if(isset($_GET['id'])) {
-	$product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
+if (isset($_GET['id'])) {
+	$product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=" . $_GET['id'])[0];
 	// print_p($product);
 }
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +18,13 @@ if(isset($_GET['id'])) {
 
 	<?php include "parts/meta.php"; ?>
 	<?php include "parts/navbar.php"; ?>
-	
+
 </head>
+
 <body>
 
 
-	<div class="container">
+	<div class="styleguidecontainer">
 		<div class="card soft">
 			<h2>You added <?= $product->name ?> to your cart</h2>
 
@@ -32,9 +35,9 @@ if(isset($_GET['id'])) {
 			</div>
 		</div>
 	</div>
-	
+
 
 
 </body>
-</html>
 
+</html>

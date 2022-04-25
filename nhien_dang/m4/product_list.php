@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,11 @@
 	<?php include "parts/navbar.php"; ?>
 
 </head>
-<body>
-	
 
-	<div class="container">
+<body>
+
+
+	<div class="styleguidecontainer">
 		<div class="card soft">
 			<h2>Product List</h2>
 			<!-- <ul>
@@ -23,7 +25,7 @@
 			</ul> -->
 
 			<?php
-			include_once "lib/php/functions.php";
+			include_once "lib/css/php/functions.php";
 			include_once "parts/templates.php";
 			$result = makeQuery(makeConn(), "
 				SELECT *
@@ -32,14 +34,15 @@
 				-- LIMIT 5
 			");
 			// print_p($result);
-			echo "<div class='productlist grid gap'>", array_reduce($result,'productListTemplate'), "</div>";
+			echo "<div class='productlist grid gap'>", array_reduce($result, 'productListTemplate'), "</div>";
 			?>
 
 		</div>
 	</div>
-	
-    <!-- Footer -->
-    <?php include "parts/footer.php"; ?>
+
+	<!-- Footer -->
+	<?php include "parts/footer.php"; ?>
 
 </body>
+
 </html>

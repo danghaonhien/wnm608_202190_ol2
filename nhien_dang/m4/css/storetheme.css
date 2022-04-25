@@ -5,3 +5,146 @@
 body {
   background-color: var(--color-offwhite);
 }
+
+.favorite label{
+	transition: all 0.2s;
+	display: inline-block;
+	transform: scale(1,1);
+	color: var(--color-main-light);
+}
+.favorite input:checked + label{
+	color: red;
+	transform: scale(2,2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+	.container {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.navbar h1 {
+		padding-left: 0.5em;
+	}
+}
+
+@media (max-width: 800px) {
+	.navbar .display-flex {
+		display: block;
+	}
+	.navbar .nav li {
+		line-height: 2em;
+	}
+}
+
+
+.figure.product {
+	border-radius: 0.5em;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	height: 100%;
+	transition: all 0.3s;
+}
+
+.product.figure img{
+	height: 100%;
+	object-fit: contain;
+}
+
+.product.figure:hover{
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.productlist a {
+	text-decoration: none;
+	font-weight: initial;
+}
+
+
+.product-overlay {
+	position: relative;
+	overflow: hidden;
+}
+
+.product-overlay figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	transition: all 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.product-overlay:hover figcaption {
+	opacity: 1;
+}
+.product-overlay .caption-body {
+	background-color: white;
+	border-radius:0.5em;
+	padding: 1em;
+	transform: translateY(2em);
+	transition: all 0.3s;
+}
+.product-overlay:hover .caption-body {
+	transform: translateY(0);
+}
+
+.product-overlay img {
+	transform: scale(1,1);
+	transition: all 0.3s;
+}
+.product-overlay:hover img {
+	transform: scale(1.4,1.4);
+}
+
+@media (max-width: 600px) {
+	.product-overlay figcaption {
+		position: relative;
+		display: block;
+		top: initial;
+		left: initial;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+		background-color: initial;
+	}
+	.product-overlay .caption-body {
+		transform: none;
+		padding: 0;
+	}
+}
+
+
+
+.images-main img{
+	width: 100%;
+	height: 40vh;
+	object-fit: contain;
+}
+
+.images-thumbs img {
+	width: 8em;
+	height: 6em;
+	object-fit: contain;
+}
+
+
