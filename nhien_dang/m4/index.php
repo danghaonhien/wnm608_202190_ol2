@@ -47,13 +47,13 @@
         <div class="carousel">
           <div class="slides">
             <div class="slide center">
-              <img src="img/sunset.jpg" class="forCarousel" />
+              <img src="img/AlignPunctures.png" class="forCarousel" />
             </div>
             <div class="slide">
-              <img src="img/sunset.jpg" class="forCarousel" />
+              <img src="img/bauhaus_faces_1.png" class="forCarousel" />
             </div>
             <div class="slide">
-              <img src="img/sunset.jpg" class="forCarousel" />
+              <img src="img/especialOrbs.png" class="forCarousel" />
             </div>
           </div>
 
@@ -102,7 +102,7 @@
         </div>
         <dl class="accordion">
           <h3>Best Sellers</h3>
-          <dt>I. Bauhaus#1</dt>
+          <dt>I. Aligned Puncture #1</dt>
           <dd>
             <p>
               It is a long established fact that a reader will be distracted by
