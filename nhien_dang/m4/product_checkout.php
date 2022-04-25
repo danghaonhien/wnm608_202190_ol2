@@ -81,7 +81,7 @@
 
           <div class="form-control">
             <!-- <input type="submit" class="form-button"  value="Submit"> -->
-            <a href="product_confirmation.php" class="form-button">Complete Checkout</a>
+            <a href="product_confirmation.php" class="buy-button">Complete Checkout</a>
           </div>
 
       </form>

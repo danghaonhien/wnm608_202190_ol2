@@ -13,14 +13,14 @@ s<!DOCTYPE html>
 <?php include "parts/navbar.php"; ?>
 	
 
-	<div class="styleguidecontainer">
+	<div class="styleguidecontainer productLink">
 		<div class="card soft">
 			<p>Thank you for your purchase</p>
 			<p>Order Number :09876880 </p>
 </div>
 
 			<p>Items </p>
-			<p><a href="product_list.php">Continue Shopping > </a></p>
+			<p ><a  href="product_list.php">Continue Shopping > </a></p>
 	
 
 </div>
