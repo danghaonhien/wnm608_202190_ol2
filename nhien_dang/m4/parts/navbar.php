@@ -17,7 +17,7 @@
     <!-- naviagtion links -->
     <div class="nav-links">
       <a href="./index.php">Home</a>
-      <a href="nfts/index.php">NFTs</a>
+      <a href="product_list.php/index.php">NFTs</a>
       <a href="about/index.php">About</a>
       <a href="contact/index.php">Contact</a>
       <a href="product_cart.php">Cart</a>

@@ -46,6 +46,13 @@ color: var(--color-bauhaus-dark);
 .card.flat {
   padding: 0;
 }
+.card-section~.card-section {
+  border-top: 1px solid var(--color-neutral-light);
+}
+
+.card-section {
+  padding: 1em;
+}
 
 .view-window2 {
   height: 100vh;
@@ -124,6 +131,23 @@ footer {
   border-radius: 0.5em;
 }
 .buy-button:hover {
+  color: var(--color-bauhaus-yellow);
+}
+.add-button {
+  background-color: var(--color-bauhaus-dark);
+  margin-top:10px;
+  margin-bottom:10px;
+  color: var(--color-bauhaus-light);
+  /* margin-top: 5rem; */
+  padding: 0.9375rem 1.875rem;
+  font-family: Futura, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5em;
+}
+.add-button:hover {
   color: var(--color-bauhaus-yellow);
 }
 .disabledButton {

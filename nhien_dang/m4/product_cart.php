@@ -37,21 +37,21 @@ $cart = makeQuery(makeConn(), "SELECT * FROM `NFTs` WHERE `id` IN (1,2,3)");
 
 
 			<div class="col-xs-12 col-md-5">
-				<div class="card soft flat">
+				<div class="card soft">
 					<div class="card-section display-flex">
 						<div class="flex-stretch"><strong>Sub Total</strong></div>
-						<div class="flex-none">&dollar;670</div>
+						<div class="flex-none">5 ETH</div>
 					</div>
 					<div class="card-section display-flex">
 						<div class="flex-stretch"><strong>Taxes</strong></div>
-						<div class="flex-none">&dollar;50</div>
+						<div class="flex-none">0.005 ETH</div>
 					</div>
 					<div class="card-section display-flex">
 						<div class="flex-stretch"><strong>Total</strong></div>
-						<div class="flex-none">&dollar;720</div>
+						<div class="flex-none">5.005 ETH</div>
 					</div>
 					<div class="card-section">
-						<a href="product_checkout.php" class="form-button">Checkout</a>
+						<a href="product_checkout.php" class="add-button">Checkout</a>
 					</div>
 				</div>
 			</div>

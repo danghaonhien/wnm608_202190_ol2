@@ -3,7 +3,7 @@
 include_once "lib/css/php/functions.php";
 
 if (isset($_GET['id'])) {
-	$product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=" . $_GET['id'])[0];
+	$product = makeQuery(makeConn(), "SELECT * FROM `NFTs` WHERE `id`=" . $_GET['id'])[0];
 	// print_p($product);
 }
 
@@ -25,13 +25,13 @@ if (isset($_GET['id'])) {
 
 
 	<div class="styleguidecontainer">
-		<div class="card soft">
+		<div class="card hard">
 			<h2>You added <?= $product->name ?> to your cart</h2>
 
-			<div class="display-flex">
-				<div class="flex-none"><a href="product_list.php">Continue Shopping</a></div>
+			<div class="display-flex productLink">
+				<div class="flex-none" ><a  href="product_list.php">Continue Shopping</a></div>
 				<div class="flex-stretch"></div>
-				<div class="flex-none"><a href="product_cart.php">Go To Cart</a></div>
+				<div class="flex-none" class="productLink"><a href="product_cart.php">Go To Cart</a></div>
 			</div>
 		</div>
 	</div>
