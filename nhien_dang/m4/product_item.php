@@ -1,6 +1,6 @@
 <?php
             
-include_once "lib/php/functions.php";
+include_once "lib/css/php/functions.php";
 
 $product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 

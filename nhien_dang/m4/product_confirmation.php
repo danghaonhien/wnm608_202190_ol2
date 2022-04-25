@@ -13,8 +13,8 @@ s<!DOCTYPE html>
 <?php include "parts/navbar.php"; ?>
 	
 
-	<div class="container">
-		<div class="card light">
+	<div class="styleguidecontainer">
+		<div class="card soft">
 			<p>Thank you for your purchase</p>
 			<p>Order Number :09876880 </p>
 </div>
