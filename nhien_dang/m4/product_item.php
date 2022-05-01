@@ -43,16 +43,17 @@ $image_elements = array_reduce($images,function($r,$o){
                 </div>
             </div>
             <div class="col-xs-12 col-md-5">
-                <div class="card ">
+                <form class="card" method="post" action="cart_actions.php?action=add-to-cart">
+                    <input type="hidden" name="product-id" value="<?= $product->id ?>">
                     <div class="card-section">
                         <h2 class="product-title"><?= $NFTs->name ?></h2>
                         <div class="product-price"><?= $NFTs->price ?> ETH</div>
                     </div>
-
                     <div class="card-section">
+                    <div class="form-control">
                         <label for="product-amount" class="form-label">Amount</label>
-                        <div class="form-select" id="product-amount">
-                            <select>
+                        <div class="form-select" >
+                            <select id="product-amount" name="product-amount">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -65,14 +66,25 @@ $image_elements = array_reduce($images,function($r,$o){
                                 <option>10</option>
                             </select>
                         </div>
-                        
+                        </div>
+                        <div class="form-control">
+                        <label for="product-amount" class="form-label">Rarity</label>
+                        <div class="form-select" >
+                            <select id="product-rarity" name="product-rarity">
+                                <option>Normal</option>
+                                <option>Rare</option>
+                                <option>Extremely Rare</option>
+                                <option>Ultra Rare</option>
+                            </select>
+                        </div>
+                        </div>
                     </div>
 
                     <div class="card-section">
-                        <a href="product_added_to_cart.php?id=<?= $NFTs->id ?>" class="add-button">Add To Cart</a>
+                       <input type="submit" class="form-button" value="Add to Cart">
 
                     </div>
-                </div>
+                </form>
             </div>
 
         </div>
