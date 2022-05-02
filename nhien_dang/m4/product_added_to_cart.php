@@ -2,11 +2,11 @@
 
 include_once "lib/css/php/functions.php";
 
-$product = makeQuery(makeConn(),"SELECT * FROM `NFTs` WHERE `id`=".$_GET['id'])[0];
+$NFTs = makeQuery(makeConn(),"SELECT * FROM `NFTs` WHERE `id`=".$_GET['id'])[0];
 
-$cart_product = array_find(getCart(),function($o){return $o->id==$_GET['id'];});
+// $cart_product = array_find(getCart(),function($o){return $o->id==$_GET['id'];});
 		/* cartItemById($_GET['id']); doesn't work */
-        ?>
+?>
 
 <!DOCTYPE html>
 <html>
@@ -23,7 +23,7 @@ $cart_product = array_find(getCart(),function($o){return $o->id==$_GET['id'];});
 
 <div class="styleguidecontainer">
 	<div class="card soft">
-		<h3 style="text-align: center;"><span>You added &nbsp;&nbsp;</span><span><span style="font-weight: 900;"><?= $product->name ?>*<?= $cart_product->amount ?></span></span><span>&nbsp;&nbsp; to your cart</span></h3>
+	<h2 class="title"><?= $NFTs->name ?> Added to Your Cart</h2>
 
 		<div class="display-flex">
 		<div class="flex-none"><a href="product_list.php">Continue Shopping</a></div>

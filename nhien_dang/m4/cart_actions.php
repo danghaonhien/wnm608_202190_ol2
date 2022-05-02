@@ -5,7 +5,7 @@ include_once "lib/css/php/functions.php";
 
 switch($_GET['action']){
     case "add-to-cart":
-        $product = makeQuery(makeConn(),"SELECT * FROM `NFTs` WHERE `id`=".$_POST['product-id'])[0];
+        $NFTs = makeQuery(makeConn(),"SELECT * FROM `NFTs` WHERE `id`=".$_POST['product-id'])[0];
         addToCart($_POST['product-id'],$_POST['product-amount']);
         header("location:product-added-to-cart.php?id={$_POST['product-id']}");
         break;

@@ -1,3 +1,10 @@
+
+<?php 
+
+include_once "lib/css/php/functions.php";
+
+?>    
+
 <base href="https://nhien-dang.com/aau/wnm608/nhien_dang/m4/">
 <nav>
   <div class="nav-content">
@@ -20,7 +27,8 @@
       <a href="product_list.php/index.php">NFTs</a>
       <a href="about/index.php">About</a>
       <a href="contact/index.php">Contact</a>
-      <a href="product_cart.php">Cart</a>
+      <a href="product_cart.php">   <span>Cart</span>
+      <span class="badge"><?= makeCartBadge(); ?></span></a>
     </div>
   </div>
 </nav>

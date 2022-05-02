@@ -14,7 +14,7 @@
 <body>
 
 
-	<div class="styleguidecontainer">
+	<div class="styleguidecontainer gapContainer">
 		<div class="">
 			<h2>Product List</h2>
 			<!-- <ul>
@@ -23,7 +23,7 @@
 				<li><a href="product_item.php?id=3">Product Three</a></li>
 				<li><a href="product_item.php?id=4">Product Four</a></li>
 			</ul> -->
-
+<br/>
 			<?php
 			include_once "lib/css/php/functions.php";
 			include_once "parts/templates.php";

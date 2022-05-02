@@ -40,11 +40,11 @@ function cartListTemplate($r,$o){
 				<strong>$o->name</strong>
 				<form action="cart_actions.php?action=delete-cart-item" method="post">
 				<input type="hidden" name="id" value="$o->id">
-				<input type="submit" class="form-button inline" value="Delete" style="font-size: 0.7em;">
+				<input type="submit" class="form-button" value="Delete" style="font-size: 0.7em;">
 				</form>
 			</div>
 			<div class="flex-none">
-				<div>&dollar;$totalfixed</div>
+				<div>$totalfixed ETH</div>
 				<form action="cart_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
 				 <input type="hidden" name="id" value="$o->id">
 					<div class="form-select" style="font-size: 0.7em;">
@@ -60,10 +60,7 @@ function cartListTemplate($r,$o){
 	
 	function cartTotals() {
 		$cart = getCartItems();
-	
 		$cartprice = array_reduce($cart, function($r,$o){return $r + $o->total;},0);
-	
-	
 		$pricefixed = number_format($cartprice,2,'.','');
 		$taxfixed = number_format($cartprice*0.0725,2,'.','');
 		$taxedfixed = number_format($cartprice*1.0725,2,'.','');
@@ -82,9 +79,9 @@ function cartListTemplate($r,$o){
 						<div class="flex-none">$taxedfixed ETH</div>
 					</div>
 					<div class="card-section">
-						<a href="product_checkout.php" class="form-button">Checkout</a>
+						<a href="product_checkout.php" class="buy-button">Checkout</a>
 					</div>
-		HTML;
+	HTML;
 	}
 	
 	

@@ -29,7 +29,7 @@ $image_elements = array_reduce($images,function($r,$o){
 <body>
 
 
-    <div class="styleguidecontainer">
+    <div class="styleguidecontainer gapContainer">
         <div class="grid gap">
             <div class="col-xs-12 col-md-7">
                 <div class="card ">
@@ -38,13 +38,15 @@ $image_elements = array_reduce($images,function($r,$o){
                     </div>
                     <div class="images-thumbs">
                         <?= $image_elements ?>
-                        <p><?= $NFTs->description ?></p>
                     </div>  
                 </div>
+                <div> 
+                      <p><?= $NFTs->description ?></p>
+                    </div>
             </div>
             <div class="col-xs-12 col-md-5">
-                <form class="card" method="post" action="cart_actions.php?action=add-to-cart">
-                <input type="hidden" name="product-id" value="<?= $product->id ?>">
+            <form class="card soft" method="post" action="cart_actions.php?action=add-to-cart">
+            <input type="hidden" name="product-id" value="<?= $NFTs->id ?>">
                     <div class="card-section">
                         <h2 class="product-title"><?= $NFTs->name ?></h2>
                         <div class="product-price"><?= $NFTs->price ?> ETH</div>

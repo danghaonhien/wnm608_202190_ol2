@@ -26,6 +26,9 @@ img {
   margin-left: auto;
   align-items: center;
 }
+.gapContainer {
+margin-top: 25px;
+}
 .product {
   max-width: 100%;
   margin-right: auto;
