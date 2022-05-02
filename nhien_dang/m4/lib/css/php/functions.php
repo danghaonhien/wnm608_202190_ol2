@@ -55,9 +55,11 @@ function addToCart($id,$amount) {
         ];
     }
 }
-function resetCart() {$_SESSION['cart'] = []; }
-function cartItemById($id) {
-    return array_find(getCart(),function($o)use($id){return $o->id==$id;});
+function resetCart() { $_SESSION['cart']=[];}
+
+
+function cartItemById($id){
+   return array_find(getCart(),function($o)use($id){return $o->id==$id;});
 }
 
 function makeCartBadge(){

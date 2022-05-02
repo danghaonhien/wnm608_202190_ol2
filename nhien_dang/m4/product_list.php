@@ -1,3 +1,7 @@
+<?php
+			include_once "lib/css/php/functions.php";
+			include_once "parts/templates.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +20,7 @@
 
 	<div class="styleguidecontainer gapContainer">
 		<div class="">
-			<h2>Product List</h2>
+			<h2>NFTs</h2>
 			<!-- <ul>
 				<li><a href="product_item.php?id=1">Product One</a></li>
 				<li><a href="product_item.php?id=2">Product Two</a></li>
@@ -25,8 +29,7 @@
 			</ul> -->
 <br/>
 			<?php
-			include_once "lib/css/php/functions.php";
-			include_once "parts/templates.php";
+		
 			$result = makeQuery(makeConn(), "
 				SELECT *
 				FROM `NFTs`

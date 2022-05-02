@@ -1,6 +1,8 @@
 /* LAYOUT CLASSES */
 img {
   object-fit: cover;
+  width:  300px;
+  height: 500px;
 }
 .container {
   max-width: 1024px;
@@ -182,3 +184,4 @@ margin-top: 25px;
   background-color: var(--color-neutral-dark);
 }
 
+.hidden{display: none;}

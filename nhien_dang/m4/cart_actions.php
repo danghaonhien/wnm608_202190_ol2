@@ -7,7 +7,7 @@ switch($_GET['action']){
     case "add-to-cart":
         $NFTs = makeQuery(makeConn(),"SELECT * FROM `NFTs` WHERE `id`=".$_POST['product-id'])[0];
         addToCart($_POST['product-id'],$_POST['product-amount']);
-        header("location:product-added-to-cart.php?id={$_POST['product-id']}");
+        header("location:product_added_to_cart.php?id={$_POST['product-id']}");
         break;
     case "update-cart-item":
         $p = cartItemById($_POST['id']);

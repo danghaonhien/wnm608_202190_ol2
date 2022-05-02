@@ -7,12 +7,16 @@
   overflow: hidden;
   transition: 3s;
   border-radius: 0.5em;
+  background-color: var(--color-bauhaus-light);
 }
 .carousel:hover {
   filter: brightness(95%);
   box-shadow: 1px 1px rgba(0, 98, 90, 0.4), 5px 5px rgba(0, 98, 90, 0.3),
     10px 10px rgba(0, 98, 90, 0.2), 15px 15px rgba(0, 98, 90, 0.1),
     20px 20px rgba(0, 98, 90, 0.05);
+}
+.slides img {
+  object-fit:cover;
 }
 @media (max-width: 768px) {
   .carousel {
