@@ -66,13 +66,10 @@ body {
 	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
-
 .productlist a {
 	text-decoration: none;
 	font-weight: initial;
+	color:black
 }
 
 

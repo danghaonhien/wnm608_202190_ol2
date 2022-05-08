@@ -1,6 +1,6 @@
 <?php
-			include_once "lib/css/php/functions.php";
-			include_once "parts/templates.php";
+include_once "lib/css/php/functions.php";
+include_once "parts/templates.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,13 +11,17 @@
 	<title>Product List</title>
 
 	<?php include "parts/meta.php"; ?>
-	<?php include "parts/navbar.php"; ?>
-
+	<script src="lib/css/js/functions.js"></script>
+	<script src="js/templates.js"></script>
+	<script>
+		query({type:'products_all'}).then(d=>{
+			$(".productlist").html(listItemTemplate(d.result))
+		});
+	</script>
 </head>
 
 <body>
-
-
+<?php include "parts/navbar.php"; ?>
 	<div class="styleguidecontainer gapContainer">
 		<div class="">
 			<h2>NFTs</h2>
@@ -27,20 +31,13 @@
 				<li><a href="product_item.php?id=3">Product Three</a></li>
 				<li><a href="product_item.php?id=4">Product Four</a></li>
 			</ul> -->
-<br/>
-			<?php
-		
-			$result = makeQuery(makeConn(), "
-				SELECT *
-				FROM `NFTs`
-				ORDER BY `price`
-				-- LIMIT 12
-			");
-			// print_p($result);
-			echo "<div class='grid gap'>", array_reduce($result, 'productListTemplate'), "</div>";
-			?>
+			<br />
+			<div class="form-control">
+				<form class="hotdog light" id="product-search"> <input type="search" placeholder="Search Products"> </form>
 
-		</div>
+			</div>
+			<div class='productlist grid gap'></div>
+		
 	</div>
 
 	<!-- Footer -->

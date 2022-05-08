@@ -8,7 +8,7 @@ function productListTemplate($r,$o) {
 				<img src = "img/$o->thumbnail" />
 				<figcaption>
 					<div class="caption-body">
-						<div>$o->name</div>
+						<div><strong>$o->name</strong></div>
 						<div>$o->price ETH</div>
 					</div>
 				</figcaption>
