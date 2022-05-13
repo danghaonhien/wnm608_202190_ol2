@@ -72,7 +72,7 @@ $image_elements = array_reduce($images, function ($r, $o) {
                                 </select>
                             </div>
                         </div>
-                        <div class="form-control">
+                        <!-- <div class="form-control">
                             <label for="product-amount" class="form-label">Rarity</label>
                             <div class="form-select">
                                 <select id="product-rarity" name="product-rarity">
@@ -82,7 +82,7 @@ $image_elements = array_reduce($images, function ($r, $o) {
                                     <option>Ultra Rare</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="card-section">

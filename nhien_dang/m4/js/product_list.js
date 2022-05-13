@@ -1,3 +1,4 @@
+
 const showResults = d => {
 	$(".productlist").html(
 		d.error?d.error:
@@ -30,6 +31,7 @@ $(()=> {
 		(
 			this.value==1 ? query({type:'product_sort',column:'price',dir:'ASC'}) :
 			this.value==2 ? query({type:'product_sort',column:'price',dir:'DESC'}) :
+			this.value==3 ? query({type:'product_sort',column:'category',dir:'DESC'}) :
 			query({type:'products_all'})
 		).then(showResults);
 	 

@@ -12,8 +12,8 @@ include_once "parts/templates.php";
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	<?php include "parts/meta.php"; ?>
 	<script src="lib/css/js/functions.js"></script>
-	<script src="js/templates.js"></script>
 	<script src="js/product_list.js"></script>
+	<script src="js/templates.js"></script>
 
 	<!-- <script>
 		query({type:'products_all'}).then(d=>{
@@ -60,6 +60,7 @@ include_once "parts/templates.php";
 								<select class="js-sort">
 									<option value="1">PRICE LOW TO HIGH </option>
 									<option value="2">PRICE HIGH TO LOW</option>
+									<option value="3">RARITY</option>
 
 								</select>
 							</div>

@@ -6,11 +6,11 @@ const listItemTemplate = templater(o=>`
 				<img src ="img/${o.thumbnail}" alt="">
 				</div>
 				<figcaption class="flex-none">
-				<div>&dollar;${o.price}</div>
-				<div>${o.name}</div>
+				<div><strong>${o.name}</strong></div>
+				<div>${o.price} ETH</div>
+				<div>${o.category}</div>
 			
 				</figcaption>
 			</figure>
 		</a>
-	
 `);

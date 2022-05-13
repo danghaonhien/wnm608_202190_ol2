@@ -1,5 +1,4 @@
 <?php 
-
 function productListTemplate($r,$o) {
 	return $r.<<<HTML
 	<div class="col-xs-12 col-md-4">
@@ -10,6 +9,7 @@ function productListTemplate($r,$o) {
 					<div class="caption-body">
 						<div><strong>$o->name</strong></div>
 						<div>$o->price ETH</div>
+						<div>$o->category </div>
 					</div>
 				</figcaption>
 			</figure>
@@ -38,6 +38,7 @@ function cartListTemplate($r,$o){
 			</div>
 			<div class="flex-stretch">
 				<strong>$o->name</strong>
+				<strong>$o->catergory</strong>
 				<form action="cart_actions.php?action=delete-cart-item" method="post">
 				<input type="hidden" name="id" value="$o->id">
 				<input type="submit" class="form-button" value="Delete" style="font-size: 0.7em;">
