@@ -52,6 +52,7 @@ $image_elements = array_reduce($images, function ($r, $o) {
                     <input type="hidden" name="product-id" value="<?= $NFTs->id ?>">
                     <div class="card-section">
                         <h2 class="product-title"><?= $NFTs->name ?></h2>
+                        <div class="product-category"><?= $NFTs->category ?></div>
                         <div class="product-price"><?= $NFTs->price ?> ETH</div>
                     </div>
                     <div class="card-section">
@@ -95,7 +96,12 @@ $image_elements = array_reduce($images, function ($r, $o) {
         </div>
     </div>
 
-
+    <div class="card soft">
+        <h2>Recommended Products</h2>
+        <?php
+        recommendedSimilar($product->category,$product->id);
+        ?>
+        </div>
 
     </div>
 

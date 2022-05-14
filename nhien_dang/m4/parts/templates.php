@@ -37,8 +37,8 @@ function cartListTemplate($r,$o){
 				 <img src="img/$o->thumbnail">
 			</div>
 			<div class="flex-stretch">
-				<strong>$o->name</strong>
-				<strong>$o->catergory</strong>
+			<div>	<strong>$o->name</strong> </div>
+			<div>	<strong>$o->category</strong></div>
 				<form action="cart_actions.php?action=delete-cart-item" method="post">
 				<input type="hidden" name="id" value="$o->id">
 				<input type="submit" class="form-button" value="Delete" style="font-size: 0.7em;">
@@ -87,7 +87,22 @@ function cartListTemplate($r,$o){
 	
 	
 	
-
+	function recommendedProducts($a) {
+		$NFTs = array_reduce($a,'productListTemplate');
+		echo <<<HTML
+		<div class="productlist grid gap">$NFTs</div>
+		HTML;
+		}
+		
+		function recommendedCategory($cat,$limit=3) {
+			$result = makeQuery(makeConn(),"SELECT * FROM `NFTs` WHERE `category`='$cat' ORDER BY `date_create` DESC LIMIT $limit");
+			recommendedProducts($result);
+		}
+		
+		function recommendedSimilar($cat,$id=0,$limit=3) {
+			$result = makeQuery(makeConn(),"SELECT * FROM `NFTs` WHERE `category`='$cat' AND `id`<>$id ORDER BY rand() LIMIT $limit");
+			recommendedProducts($result);
+		}
 
 
 // <div class="col-xs-12 col-md-3">
