@@ -71,8 +71,9 @@ body {
 	font-weight: initial;
 	color:black
 }
-
-
+#productlist_margin {
+	margin-top: 50px;
+}
 .product-overlay {
 	position: relative;
 	overflow: hidden;
@@ -143,4 +144,11 @@ body {
     width: 10em;
     height: 8em;
     object-fit: contain;
+}
+span.badge:not(:empty)::after {
+    content: ')';
+}
+
+span.badge:not(:empty)::before {
+    content: '(';
 }

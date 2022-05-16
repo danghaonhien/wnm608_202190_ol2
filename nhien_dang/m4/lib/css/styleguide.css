@@ -1,7 +1,7 @@
 /* LAYOUT CLASSES */
 img {
   object-fit: cover;
-  width:  300px;
+  width:  370px;
   height: 500px;
 }
 .container {
@@ -127,6 +127,9 @@ margin-top: 25px;
   color: var(--color-bauhaus-dark);
 }
 
+#productitem {
+  margin-top: 100px;
+}
 /* Color */
 
 .palette {

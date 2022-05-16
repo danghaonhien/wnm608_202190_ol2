@@ -24,31 +24,31 @@ include_once "parts/templates.php";
 
 <body>
 	<?php include "parts/navbar.php"; ?>
-	<div class="styleguidecontainer gapContainer" id="productlist_margin">
-    <div class="card soft">
-       
+	<div class="styleguidecontainer gapContainer">
+    <div class="card">
+    <h2>Product List</h2>
         <div class="form-control">
             <form class="hotdog light" id="product-search">
                 <input type="search" placeholder="Search Products...">
             </form>
         </div>
-        <div class="form-control display-flex flex-stretch">
-            <div class="filter-button">
+        <div class="form-control display-flex">
+            <div class="flex-none">
                 <button data-filter="category" data-value="" type="button" class="form-button">All</button>
             </div>
-            <div class="filter-button">
+            <div class="flex-none">
                 <button data-filter="category" data-value="Common" type="button" class="form-button">Common</button>
             </div>
-            <div class="filter-button">
+            <div class="flex-none">
                 <button data-filter="category" data-value="Rare" type="button" class="form-button">Rare</button>
             </div>
-            <div class="filter-button">
+            <div class="flex-none">
                 <button data-filter="category" data-value="Very Rare" type="button" class="form-button">Very Rare</button>
             </div>
-            <div class="filter-button">
+            <div class="flex-none">
                 <button data-filter="category" data-value="Ultra Rare" type="button" class="form-button">Ultra Rare</button>
             </div>
-            <div class="flex-none">
+            <div class="display-flex" style="margin-left: auto;">
             <div class="form-select">
                 <select class="js-sort">
 					<option value="1">Price Low to High</option>

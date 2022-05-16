@@ -30,7 +30,7 @@ switch($data->type) {
 
 	case "product_filter":
 		$output['result'] = makeQuery(makeConn(),"SELECT *
-			FROM `NFTss`
+			FROM `NFTs`
 			WHERE `$data->column` LIKE '$data->value'
 			LIMIT 12");
 		break;

@@ -4,7 +4,7 @@ include "../lib/css/php/functions.php";
 
 $empty_product = (object)[
     "name"=>"Bauhaus Relief",
-    "description"=>"",
+    "description"=>"Best of Bauhaus",
     "price"=>"5.2 ETH",
     "category"=>"Ultra Rare",
     "thumbnail"=>"BauhausRelief.jpg",
@@ -20,7 +20,7 @@ try {
     switch($_GET['action']) {
         case "update":
             $statement = $conn->prepare("UPDATE
-            `products`
+            `NFTs`
             SET
                 `name`=?,
                 `price`=?,
@@ -44,7 +44,7 @@ try {
             break;
         case "create":
             $statement = $conn->prepare("INSERT INTO
-            `products` 
+            `NFTs` 
             (     
                 `name`,
                 `price`,
@@ -91,7 +91,7 @@ return $r.<<<HTML
 <div class="display-flex">
 <div class="flex-none images-thumbs"><img src='img/$o->thumbnail'></div>
 <div class="flex-stretch" style="padding:1em">$o->name</div>
-<div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a></div>
+<div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="buy-button">Edit</a></div>
 </div>
 </div>
 HTML;
@@ -112,7 +112,7 @@ function showProductPage($o){
         <h2>$o->name</h2>
         <div class="form-control">
             <label class="form-label">Price</label>
-            <span>&dollar;$o->price</span>
+            <span>$o->price ETH</span>
         </div>
         <div class="form-control">
             <label class="form-label">Category</label>
@@ -179,10 +179,10 @@ function showProductPage($o){
     
     echo <<<HTML
     <div class="card soft">
-    <nav class="display-flex">
+    <div class="nav display-flex">
         <div class="flex-stretch"><a href="{$_SERVER['PHP_SELF']}">&#60; Back</a></div>
         <div class="flex-none">$delete</div>
-    </nav>
+    </div>
     </div>
     $output
     HTML;
@@ -220,7 +220,7 @@ function showProductPage($o){
     </nav>
 
 
-<div class="container" id="productlist_margin">
+<div class="styleguidecontainer" id="productlist_margin">
 
 <?php
             

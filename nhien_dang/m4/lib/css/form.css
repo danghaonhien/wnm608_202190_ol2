@@ -149,6 +149,41 @@ input[type="submit"]:disabled {
 .form-control {
   margin: 1em 0;
 }
+.form-input,
+.form-button,
+.form-item {
+	display: inline-block;
+	background-color: transparent;
+	border-width: 0;
+	font: inherit;
+	-webkit-appearance:  none;
+	color: inherit;
+	width: 100%;
+	outline: 0;
+}
+.form-input {
+	border-bottom: 1px solid var(--color-bauhaus-light);
+	padding: 0.5em 1.2em;
+}
+.form-input:focus {
+	border-bottom-color: var(--color-bauhaus-light);
+}
+.form-input.form-input-error {
+	border: 1px solid red;
+}
+.form-label {
+	font-size: 0.8em;
+	color: var(--color-bauhaus-medium);
+	display: block;
+	width: 100%;
+}
+
+
+.form-label-warning {
+	color: red;
+	margin: 0.5em auto;
+}
+
 /* Hot Dog */
 
 .hotdog {

@@ -9,7 +9,7 @@ $images = explode(",", $NFTs->images);
 $image_elements = array_reduce($images, function ($r, $o) {
     return $r . "<img src='img/$o'>";
 });
-
+ 
 // print_p($NFTs);
 
 ?>
@@ -99,7 +99,7 @@ $image_elements = array_reduce($images, function ($r, $o) {
     <div class="card soft">
         <h2>Recommended Products</h2>
         <?php
-        recommendedSimilar($product->category,$product->id);
+        recommendedCategory($NFTs->category,$NFTs->id);
         ?>
         </div>
 
