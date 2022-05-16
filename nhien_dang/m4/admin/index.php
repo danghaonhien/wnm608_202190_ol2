@@ -91,6 +91,8 @@ return $r.<<<HTML
 <div class="display-flex">
 <div class="flex-none images-thumbs"><img src='img/$o->thumbnail'></div>
 <div class="flex-stretch" style="padding:1em">$o->name</div>
+<div class="flex-stretch" style="padding:1em">$o->category</div>
+<div class="flex-stretch" style="padding:1em">$o->price ETH</div>
 <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="buy-button">Edit</a></div>
 </div>
 </div>

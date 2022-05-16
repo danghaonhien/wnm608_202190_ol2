@@ -147,19 +147,23 @@ input[type="submit"]:disabled {
 /* Form Control */
 
 .form-control {
-  margin: 1em 0;
+margin:1em;
+  
 }
-.form-input,
+.form-select>select,
+.hotdog input,
+.hotdog,
 .form-button,
+.form-input,
 .form-item {
-	display: inline-block;
-	background-color: transparent;
-	border-width: 0;
-	font: inherit;
-	-webkit-appearance:  none;
-	color: inherit;
-	width: 100%;
-	outline: 0;
+    display: inline-block;
+    background-color: white;
+    border-width: 0;
+    font: inherit;
+    -webkit-appearance: none;
+    color: inherit;
+    width: 100%;
+    outline: 0;
 }
 .form-input {
 	border-bottom: 1px solid var(--color-bauhaus-light);
@@ -178,7 +182,19 @@ input[type="submit"]:disabled {
 	width: 100%;
 }
 
-
+.form-button {
+  background-color: var(--color-bauhaus-light);
+  border-radius: 0.2em;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.5em 1em;
+}
+.form-button.inline {
+  width: initial;
+}
+.form-button:hover {
+  text-decoration: none;
+}
 .form-label-warning {
 	color: red;
 	margin: 0.5em auto;
@@ -198,14 +214,13 @@ input[type="submit"]:disabled {
     background-color: var(--color-neutral-light);
     border-radius: 0.2em;
     cursor: pointer;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 .form-select{
     position: relative;
 }
 .form-select:after{
     content: '▾';
-    font-family: Arial, sans-serif;
     font-size: 1.2em;
     position: absolute;
     top: 50%;

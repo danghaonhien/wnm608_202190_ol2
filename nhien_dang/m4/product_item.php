@@ -1,6 +1,7 @@
 <?php
 
 include_once "lib/css/php/functions.php";
+include_once "parts/templates.php";
 
 $NFTs = makeQuery(makeConn(), "SELECT * FROM `NFTs` WHERE `id`=" . $_GET['id'])[0];
 
@@ -94,14 +95,14 @@ $image_elements = array_reduce($images, function ($r, $o) {
             </div>
 
         </div>
+        <div class="card soft gapContainer">
+            <h2>Recommended Products</h2>
+            <?php
+            recommendedCategory($NFTs->category,$NFTs->id);
+            ?>
+            </div>
     </div>
 
-    <div class="card soft">
-        <h2>Recommended Products</h2>
-        <?php
-        recommendedCategory($NFTs->category,$NFTs->id);
-        ?>
-        </div>
 
     </div>
 

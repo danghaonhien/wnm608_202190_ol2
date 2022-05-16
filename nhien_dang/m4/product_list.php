@@ -33,7 +33,7 @@ include_once "parts/templates.php";
             </form>
         </div>
         <div class="form-control display-flex">
-            <div class="flex-none">
+            <div class="flex-none filter-button">
                 <button data-filter="category" data-value="" type="button" class="form-button">All</button>
             </div>
             <div class="flex-none">
