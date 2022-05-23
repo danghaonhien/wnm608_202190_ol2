@@ -8,7 +8,7 @@ include_once "parts/templates.php";
 
 
 $cart_items = getCartItems();
-
+$cart = getCart();
 
 
         ?><!DOCTYPE html>
@@ -24,9 +24,12 @@ $cart_items = getCartItems();
 
 <?php include "parts/navbar.php"; ?>
 
-<div class="styleguidecontainer">
+<div class="styleguidecontainer  gapContainer">
 	<h2>In Your Cart</h2>
-	<div class="grid gap">
+	<?php
+	if(count($cart)){
+		?>
+		<div class="grid gap">
 		<div class="col-xs-12 col-md-8">
 			<div class="card soft">
 				<?= array_reduce($cart_items,'cartListTemplate') ?>
@@ -40,6 +43,19 @@ $cart_items = getCartItems();
 		</div>
 		
 	</div>
+	<?php
+	} else{
+?>
+<div class="card soft gapContainer">
+<p>	No items in cart </p> </div>
+<h2>Other Recommendations </h2>
+<div class="gapContainer">
+<?php recommendedAnything(6); ?>
+	</div>
+
+<?php
+	}
+?>
 </div>
 
 </body>

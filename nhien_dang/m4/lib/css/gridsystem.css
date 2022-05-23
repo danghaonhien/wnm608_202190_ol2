@@ -185,6 +185,10 @@
     grid-column: span 12;
   }
 }
+[class*='col-']>.card {
+  height: 100%;
+  margin:0;
+}
 
 /*Large*/
 

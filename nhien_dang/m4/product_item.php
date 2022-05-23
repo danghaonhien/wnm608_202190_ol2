@@ -40,12 +40,13 @@ $image_elements = array_reduce($images, function ($r, $o) {
                     <div class="images-main">
                         <img src="img/<?= $NFTs->thumbnail ?>">
                     </div>
-                    <div class="images-thumbs">
+                    <div class="images-thumbs gapContainer">
                         <?= $image_elements ?>
                     </div>
-                </div>
-                <div>
-                    <p><?= $NFTs->description ?></p>
+                    <div class="gapContainer">
+                        <h3>Description:</h3>
+                        <p><?= $NFTs->description ?></p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-md-5">
@@ -89,12 +90,13 @@ $image_elements = array_reduce($images, function ($r, $o) {
 
                     <div class="card-section">
                         <input type="submit" class="buy-button" value="Add to Cart">
-
                     </div>
                 </form>
             </div>
 
         </div>
+        
+        
         <div class="card soft gapContainer">
             <h2>Recommended Products</h2>
             <?php
@@ -102,8 +104,6 @@ $image_elements = array_reduce($images, function ($r, $o) {
             ?>
             </div>
     </div>
-
-
     </div>
 
     <?php include "parts/footer.php"; ?>

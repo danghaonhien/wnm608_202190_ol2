@@ -7,7 +7,7 @@
   <?php include "parts/meta.php"; ?>
 </head>
 
-<body>
+<body class="flush">
   <?php include "parts/navbar.php"; ?>
   <!-- Hero -->
   <section class="hero">

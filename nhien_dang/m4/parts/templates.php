@@ -41,14 +41,14 @@ function cartListTemplate($r,$o){
 			<div>	<strong>$o->category</strong></div>
 				<form action="cart_actions.php?action=delete-cart-item" method="post">
 				<input type="hidden" name="id" value="$o->id">
-				<input type="submit" class="form-button" value="Delete" style="font-size: 0.7em;">
+				<input type="submit" class="form-button gapContainer" value="Delete" style="font-size: 0.7em;">
 				</form>
 			</div>
 			<div class="flex-none">
 				<div>$totalfixed ETH</div>
 				<form action="cart_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
 				 <input type="hidden" name="id" value="$o->id">
-					<div class="form-select" style="font-size: 0.7em;">
+					<div class="form-select" style="font-size: 0.9em;">
 						   $selectamount
 						</div>
 				</form>
@@ -82,6 +82,7 @@ function cartListTemplate($r,$o){
 					<div class="card-section">
 						<a href="product_checkout.php" class="buy-button">Checkout</a>
 					</div>
+	<br/>
 	HTML;
 	}
 	
@@ -96,6 +97,11 @@ function cartListTemplate($r,$o){
 		
 		function recommendedCategory($cat,$limit=3) {
 			$result = makeQuery(makeConn(),"SELECT * FROM `NFTs` WHERE `category`='$cat' ORDER BY `date_create` DESC LIMIT $limit");
+			recommendedProducts($result);
+		}
+		
+		function recommendedAnything($limit=3) {
+			$result = makeQuery(makeConn(),"SELECT * FROM `NFTs` ORDER BY rand()  LIMIT $limit");
 			recommendedProducts($result);
 		}
 		
