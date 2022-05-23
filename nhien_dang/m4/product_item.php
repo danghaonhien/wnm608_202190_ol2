@@ -43,7 +43,7 @@ $image_elements = array_reduce($images, function ($r, $o) {
                     <div class="images-thumbs gapContainer">
                         <?= $image_elements ?>
                     </div>
-                    <div class="gapContainer">
+                    <div class="card soft gapContainer">
                         <h3>Description:</h3>
                         <p><?= $NFTs->description ?></p>
                     </div>
@@ -97,8 +97,8 @@ $image_elements = array_reduce($images, function ($r, $o) {
         </div>
         
         
-        <div class="card soft gapContainer">
-            <h2>Recommended Products</h2>
+        <h2>Recommended Products</h2>
+        <div class="gapContainer">
             <?php
             recommendedCategory($NFTs->category,$NFTs->id);
             ?>

@@ -13,7 +13,7 @@
 <?php include "parts/navbar.php"; ?>
 	
 
-	<div class="styleguidecontainer productLink">
+	<div class="styleguidecontainer productLink gapContainer">
 		<div class="card soft">
 			<p>Thank you for your purchase</p>
 			<p>Order Number :09876880 </p>
@@ -26,7 +26,7 @@
 </div>
 
 </div>
-
+<?php include "parts/footer.php"; ?>
 </body>
 
 

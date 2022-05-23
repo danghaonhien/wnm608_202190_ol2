@@ -38,6 +38,10 @@ $cart = getCart();
 		<div class="col-xs-12 col-md-4">
 			<div class="card soft flat">
 				<?= cartTotals() ?>
+				<div class="card-section">
+						<a href="product_checkout.php" class="buy-button">Checkout</a>
+					</div>
+					<br/>
 			</div>
 			
 		</div>
@@ -47,7 +51,7 @@ $cart = getCart();
 	} else{
 ?>
 <div class="card soft gapContainer">
-<p>	No items in cart </p> </div>
+<p>	No NFTs in cart </p> </div>
 <h2>Other Recommendations </h2>
 <div class="gapContainer">
 <?php recommendedAnything(6); ?>
@@ -57,6 +61,6 @@ $cart = getCart();
 	}
 ?>
 </div>
-
+<?php include "parts/footer.php"; ?>
 </body>
 </html> 

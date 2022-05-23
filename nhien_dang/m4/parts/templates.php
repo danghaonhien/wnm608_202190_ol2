@@ -79,10 +79,7 @@ function cartListTemplate($r,$o){
 						<div class="flex-stretch"><strong>Total</strong></div>
 						<div class="flex-none">$taxedfixed ETH</div>
 					</div>
-					<div class="card-section">
-						<a href="product_checkout.php" class="buy-button">Checkout</a>
-					</div>
-	<br/>
+
 	HTML;
 	}
 	
