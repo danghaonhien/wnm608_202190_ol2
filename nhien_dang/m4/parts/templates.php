@@ -17,6 +17,15 @@ function productListTemplate($r,$o) {
 	</div>
 	HTML;
 }
+function accordionTemplate($r,$o) {
+	return $r.<<<HTML
+		<a class="cardImage" href="product_item.php?id=$o->id">
+			<figure class="figure card soft">
+				<img src = "img/$o->thumbnail" />
+			</figure>
+		</a>
+	HTML;
+}
 
 function selectAmount($amount=1,$total=10) {
     $output = "<select name='amount'>";

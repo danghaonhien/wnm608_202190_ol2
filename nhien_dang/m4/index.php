@@ -1,3 +1,12 @@
+<?php
+
+include_once "lib/css/php/functions.php";
+include_once "parts/templates.php";
+
+
+// print_p($NFTs);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,6 +14,8 @@
 
   <title>BauhausNFTs</title>
   <?php include "parts/meta.php"; ?>
+  <script src="js/product_thumbs.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body class="flush">
@@ -44,9 +55,10 @@
     <div class="container2">
       <div class="carousel">
         <div class="slides">
-          <div class="slide center">
-            <img src="img/AlignedPunctures.png" class="forCarousel" />
-          </div>
+        <a href="https://nhien-dang.com/aau/wnm608/nhien_dang/m4/product_item.php?id=5">  <div class="slide center">
+        	
+            <img src="img/AlignedPunctures.png" class="forCarousel" /> 
+          </div></a>
           <div class="slide">
             <img src="img/bauhaus_faces_1.png" class="forCarousel" />
           </div>
@@ -110,12 +122,12 @@
     <section class="topTrending">
       <div class="topTrending-content">
         <h1 class="topTrending-title">New Collections</h1>
-        <h2 class="topTrending-subtitle">Newest Collection!</h2>
+        <h2 class="topTrending-subtitle"> The Exclusive Nfts Collections</h2>
       </div>
     </section>
   </div>
   <!-- Grid 2 -->
-  <div class="grid-container">
+  <!-- <div class="grid-container">
     <div class="grid gap">
       <div class="col-xs-12 col-md-3">
         <article id="" class="card soft">
@@ -219,8 +231,19 @@
         </article>
       </div>
     </div>
-  </div>
+  </div> -->
+  <div class="styleguidecontainer gapContainer">
+ 
+			<?php
 
+			$result = makeQuery(makeConn(),"SELECT * FROM `NFTs` WHERE `category` = 'Very Rare' ORDER BY `price` DESC LIMIT 3");
+
+			recommendedProducts($result);
+
+			?>
+
+	</div>
+            </div>
 
   <!-- Footer -->
   <?php include "parts/footer.php"; ?>
